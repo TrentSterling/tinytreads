@@ -2,7 +2,7 @@
 // attract-mode battle underneath, with the buttons and footer hidden. Candidates are scored by how
 // much weapon trail (bright colour) is on screen. Zero deps: node tools/og-shot.mjs [file-or-url]
 import {launch, sleep, until} from './cdp.mjs';
-import {mkdirSync, copyFileSync, readFileSync} from 'node:fs';
+import {mkdirSync, copyFileSync, readFileSync, writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import zlib from 'node:zlib';
@@ -10,7 +10,10 @@ import zlib from 'node:zlib';
 const arg = process.argv.slice(2).find(a => !a.startsWith('--')) || 'index.html';
 const target = /^https?:/.test(arg) ? arg : pathToFileURL(resolve(arg)).href;
 const out = resolve('tools/out'); mkdirSync(out, {recursive: true});
-const page = await launch({port: +(process.env.PORT || 9432), width: 1200, height: 630});
+// #stage is a fixed 1200x800 box scaled to fit the viewport (side bars at 1200x630), so shoot it at native
+// scale and crop the 1200x630 band that holds the wordmark, the hero tanks and the attract battle.
+const page = await launch({port: +(process.env.PORT || 9432), width: 1200, height: 800});
+const CROP_Y = +(process.env.CROP_Y || 170);
 
 function readPng(file) {
   const buf = readFileSync(file); let pos = 8; const idat = []; let w = 0, h = 0, ct = 0;
@@ -35,6 +38,20 @@ function readPng(file) {
   }
   return {w, h, bpp, px};
 }
+
+function writePng(file, w, h, bpp, px) {
+  const stride = w * bpp, raw = Buffer.alloc((stride + 1) * h);
+  for (let y = 0; y < h; y++) { raw[y * (stride + 1)] = 0; px.copy(raw, y * (stride + 1) + 1, y * stride, (y + 1) * stride); }
+  const crc = (buf) => { let c = ~0; for (const b of buf) { c ^= b; for (let k = 0; k < 8; k++) c = (c >>> 1) ^ (0xEDB88320 & -(c & 1)); } return ~c >>> 0; };
+  const chunk = (type, data) => { const len = Buffer.alloc(4); len.writeUInt32BE(data.length); const td = Buffer.concat([Buffer.from(type, 'ascii'), data]); const c = Buffer.alloc(4); c.writeUInt32BE(crc(td)); return Buffer.concat([len, td, c]); };
+  const ihdr = Buffer.alloc(13); ihdr.writeUInt32BE(w, 0); ihdr.writeUInt32BE(h, 4); ihdr[8] = 8; ihdr[9] = bpp === 4 ? 6 : 2; ihdr[10] = 0; ihdr[11] = 0; ihdr[12] = 0;
+  writeFileSync(file, Buffer.concat([Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]), chunk('IHDR', ihdr), chunk('IDAT', zlib.deflateSync(raw, {level: 6})), chunk('IEND', Buffer.alloc(0))]));
+}
+function cropPng(src, dst, x, y, w, h) {
+  const img = readPng(src); const out = Buffer.alloc(w * h * img.bpp);
+  for (let r = 0; r < h; r++) img.px.copy(out, r * w * img.bpp, ((y + r) * img.w + x) * img.bpp, ((y + r) * img.w + x + w) * img.bpp);
+  writePng(dst, w, h, img.bpp, out);
+}
 // Saturated bright pixels in the lower two thirds (where the attract battle plays).
 function trail(file) {
   const {w, h, bpp, px} = readPng(file); let n = 0;
@@ -49,12 +66,15 @@ try {
   await page.goto(target);
   await until(() => page.eval('!!window.POCKET && !document.getElementById("title").hidden'), {timeout: 60000, label: 'boot'});
   await sleep(1500);
-  await page.eval(`(()=>{const s=document.createElement('style');s.id='og';s.textContent='.title-actions,#titleSound,#fullscreenTitle,#titleCredits,#attractCaption,#credits,#title button{display:none !important}';document.head.append(s);})()`);
+  // Hide the buttons and the footer, then slide the hero block (wordmark + tanks) down so it sits right above the
+  // attract battle instead of leaving an empty band across the middle of the card; the crop removes the top.
+  await page.eval(`(()=>{const s=document.createElement('style');s.id='og';s.textContent='.title-actions,#titleSound,#fullscreenTitle,#titleCredits,#attractCaption,#credits,#title button{display:none !important}#titleContent,#titleTanks{transform:translateY(${process.env.SHIFT || 150}px)}.signature,.buildtag,.cornerbuttons{display:none !important}';document.head.append(s);for(const e of document.querySelectorAll('#title *')){if(e.children.length<=2&&/Made by|ARTILLERY CLUB/.test(e.textContent)&&e.textContent.length<40)e.style.display='none';}})()`);
   const shots = [];
   for (let i = 0; i < +(process.env.SHOTS || 14); i++) {
     await sleep(+(process.env.GAP || 700));
     const f = `${out}/og-candidate-${i}.png`;
     await page.shot(f);
+    cropPng(f, f, 0, CROP_Y, 1200, 630);
     const score = trail(f);
     shots.push({f, score});
     console.log('candidate', i, 'trail pixels', score);

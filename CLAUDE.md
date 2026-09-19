@@ -18,7 +18,7 @@ Single-file turn-based artillery game (Pocket Tanks / Scorched Earth lineage): d
 
 1. New drop lands in `~/Downloads/tiny-treads-vN.html`: copy it to `versions/`, point `tools/polish.py` at it (or pass the path), run it. The script aborts if an anchor is missing; fix the anchor, never hand-merge.
 2. `node tools/verify.mjs` (14 checks: boot, title, arsenal count, quick battle, fire, field canvas, back to menu, reload, storage, console). Also accepts the live URL.
-3. `node tools/og-shot.mjs` only if the look changed (title screen at 1200x630 with buttons hidden; candidates scored by weapon-trail pixels from the attract battle). Bump `?v=N` on the og-image meta in `tools/polish.py` when the image changes.
+3. `node tools/og-shot.mjs` only if the look changed. The stage is a fixed 1200x800 box scaled to fit, so the script shoots it at native scale, hides the buttons and footer, slides the wordmark and hero tanks down 150 px (`SHIFT=`) to sit above the attract battle, crops the 1200x630 band from y=170 (`CROP_Y=`), and scores candidates by weapon-trail pixels. Version 1 at a 1200x630 viewport had side bars and an empty middle and read as badly cropped on the games card. Bump `?v=N` on the og-image meta in `tools/polish.py` when the image changes.
 4. Commit, push. Pages deploys in about a minute. Re-run `verify.mjs` against https://tront.xyz/tinytreads/.
 
 ## Public hooks
