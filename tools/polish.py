@@ -42,3 +42,6 @@ left = [(i + 1, l[:120]) for i, l in enumerate(html.split('\n')) if '—' in l a
 print('em-dash lines outside comments:', left)
 DST.write_text(html, encoding='utf-8', newline='\n')
 print(f'wrote {DST} ({len(orig)} -> {len(html)} bytes)')
+# ---- SEO About block (prose, crosslinks, JSON-LD) so the page is not just a canvas to Google ----
+import subprocess
+subprocess.run([sys.executable, 'C:/trontstack/seo/about.py', 'tinytreads'], check=True)
