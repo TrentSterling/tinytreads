@@ -44,4 +44,16 @@ DST.write_text(html, encoding='utf-8', newline='\n')
 print(f'wrote {DST} ({len(orig)} -> {len(html)} bytes)')
 # ---- SEO About block (prose, crosslinks, JSON-LD) so the page is not just a canvas to Google ----
 import subprocess
-subprocess.run([sys.executable, 'C:/trontstack/seo/about.py', 'tinytreads'], check=True)
+# Keep the approved About integration reproducible without an external checkout.
+import re
+html = DST.read_text(encoding='utf-8')
+fragment = (ROOT / 'tools' / 'about-fragment.html').read_text(encoding='utf-8').strip()
+html = re.sub(r'<!-- tront-about:start -->.*?<!-- tront-about:end -->', '', html, flags=re.S)
+html = html.replace('</body>', fragment + '\n</body>')
+head = '<link rel="stylesheet" href="tront-about-discovery.css">\n<link rel="stylesheet" href="tront-about-shell.css">\n<script src="tront-about-shell.js"></script>\n'
+html = html.replace('<head>', '<head>\n' + head, 1)
+DST.write_text(html, encoding='utf-8', newline='\n')
+
+# Mark the animated game surface for the shared preview resource policy.
+html = html.replace('id="stage"', 'id="stage" data-tront-discovery-game-surface', 1)
+DST.write_text(html, encoding='utf-8', newline='\n')
