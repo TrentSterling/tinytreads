@@ -97,7 +97,7 @@ input,select{background:#111b20;border-color:#48585e;color:#eef2e9;border-radius
 </style>
 </head>
 <body>
-<div id="stage">
+<div id="stage" data-tront-discovery-game-surface>
  <canvas id="field" width="1200" height="610" aria-label="Artillery battlefield. Drag to aim. In the range, drag the target to reposition it."></canvas>
  <div id="rangebar" hidden><button id="repairBtn">Repair terrain</button><button id="terrainBtn">New landscape</button><button id="trajectoryBtn">Trajectory: off</button><button id="rangeArsenal">All 400 weapons</button></div>
  <div id="hud" hidden>
@@ -1743,7 +1743,6 @@ if(!window.TINY_DEMO){const m=location.hash.match(/^#brawl=([A-Z0-9]{4,12})$/i);
         </div>
         <h3 class="tront-discovery__games-title">Games</h3>
         <div class="tront-discovery__grid" data-tront-discovery-cards></div>
-        <p class="tront-discovery__status" data-tront-discovery-status role="status" aria-live="polite"></p>
         <noscript><p class="tront-discovery__hub"><a href="/craftmine/">CraftMine</a> &middot; <a href="/smear/">SMEAR</a> &middot; <a href="/games/">More games and tools</a></p></noscript>
     </section>
 </details>
