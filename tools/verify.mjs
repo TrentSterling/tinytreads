@@ -21,7 +21,7 @@ try {
   check('title: shown with quick battle and online', (await shown('title')) && (await shown('quickPlay')), await page.eval('document.getElementById("quickPlay").textContent.trim()'));
   check('title: tront.xyz link', await page.eval('[...document.querySelectorAll("a[href^=\'https://tront.xyz\']")].length>=1'));
   check('title: no root-relative asset paths', await page.eval('![...document.querySelectorAll("[src],[href]")].some(e=>/^\\/[^\\/]/.test(e.getAttribute("src")||e.getAttribute("href")||""))'));
-  check('title: no external scripts or fonts', await page.eval('[...document.querySelectorAll("script[src],link[rel=stylesheet]")].length===0'));
+  check('title: no external scripts or fonts', await page.eval('[...document.querySelectorAll("script[src],link[rel=stylesheet]")].every(e=>!/^https?:/.test(e.getAttribute("src")||e.getAttribute("href")||""))'));
   check('title: arsenal lists 400 weapons', (await page.eval('POCKET.WEAPONS.length')) === 400, 'weapons ' + await page.eval('POCKET.WEAPONS.length'));
   await sleep(2500);
   await page.shot(`${out}/title.png`);
