@@ -1,0 +1,11 @@
+Γ£ö original descriptions, credits, project links and structured data survive (0.7878ms)
+Γ£ö approved shared source is pinned byte for byte (1.4652ms)
+Γ£ö one collapsed host, local assets, early scoped input integration (0.5475ms)
+Γä╣ tests 3
+Γä╣ suites 0
+Γä╣ pass 3
+Γä╣ fail 0
+Γä╣ cancelled 0
+Γä╣ skipped 0
+Γä╣ todo 0
+Γä╣ duration_ms 76.563

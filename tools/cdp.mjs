@@ -1,24 +1,28 @@
 // Tiny Chrome DevTools Protocol driver. Zero deps (Node 20+: global fetch + WebSocket).
 import {spawn} from 'node:child_process';
-import {mkdtempSync} from 'node:fs';
+import {mkdtempSync, readFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 
 const CHROME = process.env.CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 
-export async function launch({port, width = 1280, height = 800, headless = true} = {}) {
+export async function launch({port = 0, width = 1280, height = 800, headless = true} = {}) {
   const dir = mkdtempSync(join(tmpdir(), 'sd-chrome-'));
   const args = [
-    headless ? '--headless=new' : '', `--remote-debugging-port=${port}`, `--user-data-dir=${dir}`,
+    headless ? '--headless=new' : '', '--remote-debugging-port=0', `--user-data-dir=${dir}`,
     `--window-size=${width},${height}`, '--enable-unsafe-webgpu', '--enable-features=Vulkan', '--disable-features=CalculateNativeWinOcclusion', '--disable-backgrounding-occluded-windows', '--disable-renderer-backgrounding', '--disable-background-timer-throttling',
     '--no-first-run', '--no-default-browser-check', '--autoplay-policy=no-user-gesture-required', '--mute-audio', '--hide-scrollbars',
   ].filter(Boolean);
-  const proc = spawn(CHROME, args, {stdio: 'ignore'});
+  const proc = spawn(CHROME, args, {stdio: 'ignore', windowsHide: true});
   let info;
   for (let i = 0; i < 60; i++) {
-    try { info = await (await fetch(`http://127.0.0.1:${port}/json/version`)).json(); break; } catch { await sleep(250); }
+    try {
+      // The fresh profile's port file identifies our browser, never an existing session.
+      port = Number(readFileSync(join(dir, 'DevToolsActivePort'), 'utf8').split('\n')[0]);
+      info = await (await fetch(`http://127.0.0.1:${port}/json/version`)).json(); break;
+    } catch { await sleep(250); }
   }
-  if (!info) throw new Error('chrome did not start on ' + port);
+  if (!info) { proc.kill(); throw new Error('owned chrome did not start'); }
   const ws = new WebSocket(info.webSocketDebuggerUrl);
   await new Promise((res, rej) => { ws.onopen = res; ws.onerror = rej; });
   let seq = 0; const pending = new Map(); const listeners = [];
@@ -41,12 +45,13 @@ export async function launch({port, width = 1280, height = 800, headless = true}
   await call('Emulation.setDeviceMetricsOverride', {width, height, deviceScaleFactor: 1, mobile: false});
   const page = {
     logs, proc, dir,
+    init: source => call('Page.addScriptToEvaluateOnNewDocument', {source}),
     goto: url => call('Page.navigate', {url}),
     eval: async (expr) => { const r = await call('Runtime.evaluate', {expression: expr, returnByValue: true, awaitPromise: true}); if (r.exceptionDetails) throw new Error('eval: ' + (r.exceptionDetails.exception?.description || r.exceptionDetails.text)); return r.result.value; },
     shot: async (file) => { const {data} = await call('Page.captureScreenshot', {format: 'png'}); const fs = await import('node:fs'); fs.writeFileSync(file, Buffer.from(data, 'base64')); return file; },
     mouse: (type, x, y, button = 'left') => call('Input.dispatchMouseEvent', {type, x, y, button, clickCount: 1, buttons: type === 'mouseReleased' ? 0 : 1}),
     front: () => call('Page.bringToFront'),
-    kill: () => { try { proc.kill(); } catch {} },
+    kill: async () => { try { await send('Browser.close'); } finally { ws.close(); try { proc.kill(); } catch {} } },
   };
   return page;
 }
