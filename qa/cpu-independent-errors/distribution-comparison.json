@@ -1,0 +1,1002 @@
+{
+  "sources": [
+    {
+      "label": "baseline",
+      "sha256": "000d7bd6b903289787bb6e1b39f8a7b929ffc6510fcbce4c664f131d4496a0be"
+    },
+    {
+      "label": "held",
+      "sha256": "e1cb4d0ef5277a00c82b6c7d5715e43c7c5c761ec09986d07e4460ae659c16f7"
+    },
+    {
+      "label": "candidate",
+      "sha256": "1fc820b388328d641280742642d9343559bb8171790eff5bb9050d2c1c75a6d6"
+    }
+  ],
+  "groups": [
+    {
+      "id": "review-flat",
+      "difficulty": "easy",
+      "count": 128,
+      "baseline": {
+        "scoring": 45,
+        "points": 2934,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 49,
+        "points": 3749,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 49,
+        "points": 3749,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        29,
+        30,
+        33,
+        34,
+        39,
+        52,
+        57,
+        59,
+        64,
+        67,
+        68,
+        70,
+        83,
+        92,
+        95,
+        96,
+        99,
+        110,
+        116,
+        118,
+        121,
+        123
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "review-flat",
+      "difficulty": "normal",
+      "count": 128,
+      "baseline": {
+        "scoring": 63,
+        "points": 3775,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 59,
+        "points": 4845,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 59,
+        "points": 4845,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        19,
+        24,
+        26,
+        29,
+        34,
+        39,
+        44,
+        48,
+        52,
+        57,
+        59,
+        64,
+        67,
+        70,
+        92,
+        95,
+        96,
+        99,
+        104,
+        110,
+        116,
+        118,
+        119,
+        123
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "review-flat",
+      "difficulty": "hard",
+      "count": 128,
+      "baseline": {
+        "scoring": 94,
+        "points": 6311,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 87,
+        "points": 7862,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 118,
+        "points": 6242,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770--4",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 12,
+        "points": 854,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 12,
+        "points": 953,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 12,
+        "points": 953,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        3189639355,
+        2563012070,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770--4",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 20,
+        "points": 1347,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 17,
+        "points": 1416,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 17,
+        "points": 1416,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        2,
+        3189639355,
+        2563012070,
+        2323661742,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770--4",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 32,
+        "points": 2369,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 32,
+        "points": 2894,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 32,
+        "points": 2894,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770-0",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 12,
+        "points": 899,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 12,
+        "points": 977,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 12,
+        "points": 977,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        3189639355,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770-0",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 22,
+        "points": 1430,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 20,
+        "points": 1660,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 20,
+        "points": 1660,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        3189639355,
+        2563012070,
+        2323661742,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770-0",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 28,
+        "points": 2065,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 26,
+        "points": 2354,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 32,
+        "points": 1818,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770-4",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 3,
+        "points": 231,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 4,
+        "points": 228,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 4,
+        "points": 228,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        15
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770-4",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 12,
+        "points": 707,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 23,
+        "points": 1075,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 23,
+        "points": 1075,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        2323661742
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-770-4",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 14,
+        "points": 973,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 32,
+        "points": 1817,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 32,
+        "points": 1817,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-810--4",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 11,
+        "points": 807,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 12,
+        "points": 953,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 12,
+        "points": 953,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        3189639355,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-810--4",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 20,
+        "points": 1345,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 17,
+        "points": 1372,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 17,
+        "points": 1372,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        2,
+        3189639355,
+        2563012070,
+        2323661742,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-810--4",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 32,
+        "points": 2369,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 32,
+        "points": 2894,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 32,
+        "points": 2894,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-810-4",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 3,
+        "points": 161,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 4,
+        "points": 181,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 4,
+        "points": 181,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        4
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-810-4",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 7,
+        "points": 403,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 18,
+        "points": 724,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 18,
+        "points": 724,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-810-4",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 14,
+        "points": 945,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 32,
+        "points": 1788,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 32,
+        "points": 1788,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850--4",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 15,
+        "points": 1082,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 14,
+        "points": 1137,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 14,
+        "points": 1137,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        3189639355,
+        2563012070,
+        2323661742,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850--4",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 24,
+        "points": 1706,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 21,
+        "points": 1786,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 21,
+        "points": 1786,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        2,
+        15,
+        3189639355,
+        2563012070,
+        2323661742,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850--4",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 31,
+        "points": 2277,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 31,
+        "points": 2802,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 31,
+        "points": 2802,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850-0",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 12,
+        "points": 854,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 11,
+        "points": 891,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 11,
+        "points": 891,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        3189639355,
+        2563012070,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850-0",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 16,
+        "points": 1014,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 15,
+        "points": 1236,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 15,
+        "points": 1236,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        1,
+        2,
+        15,
+        3189639355,
+        2563012070,
+        2323661742,
+        683130215
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850-0",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 28,
+        "points": 2065,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 26,
+        "points": 2354,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 32,
+        "points": 1818,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850-4",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 1,
+        "points": 47,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 1,
+        "points": 47,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 1,
+        "points": 47,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        15
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850-4",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 7,
+        "points": 342,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 19,
+        "points": 703,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 19,
+        "points": 703,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        2323661742
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "near-850-4",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 12,
+        "points": 789,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 30,
+        "points": 1635,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 30,
+        "points": 1635,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "distance-65",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 25,
+        "points": 1725,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 25,
+        "points": 2250,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 25,
+        "points": 2250,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "distance-300",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 29,
+        "points": 2125,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 29,
+        "points": 2622,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 31,
+        "points": 1727,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "distance-500",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 29,
+        "points": 2127,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 28,
+        "points": 2534,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 32,
+        "points": 1819,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "distance-950",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 27,
+        "points": 1973,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 25,
+        "points": 2262,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 31,
+        "points": 1724,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "wind--20",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 27,
+        "points": 1973,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 25,
+        "points": 2262,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 31,
+        "points": 1727,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "wind-20",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 27,
+        "points": 1973,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 25,
+        "points": 2262,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 31,
+        "points": 1726,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "low-gravity",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 23,
+        "points": 1561,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 21,
+        "points": 1894,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 27,
+        "points": 1264,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "leftward",
+      "difficulty": "easy",
+      "count": 32,
+      "baseline": {
+        "scoring": 12,
+        "points": 815,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 12,
+        "points": 895,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 12,
+        "points": 895,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        8,
+        11,
+        535203586,
+        1549107828,
+        3576916312,
+        3964193269
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "leftward",
+      "difficulty": "normal",
+      "count": 32,
+      "baseline": {
+        "scoring": 18,
+        "points": 1014,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 14,
+        "points": 1115,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 14,
+        "points": 1115,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [
+        6,
+        8,
+        11,
+        13,
+        535203586,
+        3576916312,
+        3964193269
+      ],
+      "newMissesVsHeld": []
+    },
+    {
+      "id": "leftward",
+      "difficulty": "hard",
+      "count": 32,
+      "baseline": {
+        "scoring": 25,
+        "points": 1789,
+        "selfHitShots": 0
+      },
+      "held": {
+        "scoring": 22,
+        "points": 1988,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "scoring": 29,
+        "points": 1536,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": [],
+      "newMissesVsHeld": []
+    }
+  ],
+  "seed4": {
+    "seed": 4,
+    "name": "Single Shot",
+    "aim": {
+      "angle": 43.222478582710025,
+      "power": 72.44610139876605,
+      "error": 12.34603644082917
+    },
+    "cost": 0.7000000476837158,
+    "decisionRng": 3344977972,
+    "points": 47,
+    "selfHits": 0,
+    "terrainChanged": true,
+    "buriedBefore": false,
+    "buriedAfter": false,
+    "turn": 1,
+    "steps": 437,
+    "safetyTimeouts": 0
+  },
+  "rngSequencePreserved": true,
+  "totalShotsPerSource": 1472,
+  "passed": true
+}

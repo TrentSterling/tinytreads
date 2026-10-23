@@ -1,0 +1,20 @@
+{
+  "matched": true,
+  "comparedShots": 260,
+  "excluded": [
+    "cost"
+  ],
+  "sourceSha256": "507b6dda16d1eb7955c25da3860893ace78f2de6de65aa051d45ab3294cc22d4",
+  "summary": {
+    "shots": 260,
+    "completeMatches": 8,
+    "selfHitShots": 0,
+    "totalPoints": 7581,
+    "terrainChangeShots": 217,
+    "decisionMs": {
+      "p50": 0.5999999046325684,
+      "p95": 1.5,
+      "max": 4.6000001430511475
+    }
+  }
+}

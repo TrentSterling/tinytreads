@@ -1,0 +1,1869 @@
+{
+  "sources": [
+    {
+      "label": "baseline",
+      "sha256": "000d7bd6b903289787bb6e1b39f8a7b929ffc6510fcbce4c664f131d4496a0be"
+    },
+    {
+      "label": "ideal",
+      "sha256": "e1cb4d0ef5277a00c82b6c7d5715e43c7c5c761ec09986d07e4460ae659c16f7"
+    },
+    {
+      "label": "paired",
+      "sha256": "507b6dda16d1eb7955c25da3860893ace78f2de6de65aa051d45ab3294cc22d4"
+    },
+    {
+      "label": "candidate",
+      "sha256": "86fa612fd31fcacefe085a496ae3bb895735f030652d9de90b744dcea6db57c8"
+    }
+  ],
+  "groups": [
+    {
+      "id": "flat-740-minus8",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        3733412389,
+        1867251044,
+        4049056649,
+        119198408,
+        657750131
+      ],
+      "newMissesVsPaired": [
+        3733412389,
+        1620250702,
+        1867251044,
+        4049056649,
+        119198408,
+        1343449689,
+        3792572481
+      ],
+      "baseline": {
+        "hits": 27,
+        "points": 1396
+      },
+      "ideal": {
+        "hits": 25,
+        "points": 1705
+      },
+      "paired": {
+        "hits": 24,
+        "points": 753
+      },
+      "candidate": {
+        "hits": 27,
+        "points": 1396
+      }
+    },
+    {
+      "id": "flat-740-minus8",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        119198408
+      ],
+      "newMissesVsPaired": [
+        1620250702,
+        119198408
+      ],
+      "baseline": {
+        "hits": 37,
+        "points": 1818
+      },
+      "ideal": {
+        "hits": 28,
+        "points": 2447
+      },
+      "paired": {
+        "hits": 29,
+        "points": 1078
+      },
+      "candidate": {
+        "hits": 37,
+        "points": 1818
+      }
+    },
+    {
+      "id": "flat-740-minus8",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 48,
+        "points": 2646
+      },
+      "ideal": {
+        "hits": 48,
+        "points": 4320
+      },
+      "paired": {
+        "hits": 48,
+        "points": 4320
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 4320
+      }
+    },
+    {
+      "id": "flat-780-plus2",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        2070038034,
+        2716983073,
+        3261909790,
+        4272350060,
+        657750131,
+        871154985
+      ],
+      "newMissesVsPaired": [
+        2070038034,
+        2716983073,
+        3261909790,
+        4272350060,
+        657750131,
+        871154985
+      ],
+      "baseline": {
+        "hits": 14,
+        "points": 353
+      },
+      "ideal": {
+        "hits": 13,
+        "points": 453
+      },
+      "paired": {
+        "hits": 13,
+        "points": 453
+      },
+      "candidate": {
+        "hits": 14,
+        "points": 353
+      }
+    },
+    {
+      "id": "flat-780-plus2",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        3733412389,
+        3938395859,
+        535103644,
+        2716983073,
+        934575712,
+        1148748195,
+        3456586804,
+        1956261083,
+        4272350060,
+        2440157488,
+        871154985,
+        1100178536,
+        3418307325
+      ],
+      "newMissesVsPaired": [
+        3733412389,
+        3938395859,
+        535103644,
+        2716983073,
+        934575712,
+        1148748195,
+        3456586804,
+        1956261083,
+        4272350060,
+        2440157488,
+        871154985,
+        1100178536,
+        3418307325
+      ],
+      "baseline": {
+        "hits": 25,
+        "points": 867
+      },
+      "ideal": {
+        "hits": 33,
+        "points": 1339
+      },
+      "paired": {
+        "hits": 33,
+        "points": 1339
+      },
+      "candidate": {
+        "hits": 25,
+        "points": 867
+      }
+    },
+    {
+      "id": "flat-780-plus2",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 26,
+        "points": 1030
+      },
+      "ideal": {
+        "hits": 48,
+        "points": 2256
+      },
+      "paired": {
+        "hits": 48,
+        "points": 2256
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 2256
+      }
+    },
+    {
+      "id": "flat-820-minus2",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        1425573776,
+        3733412389,
+        119198408,
+        454946629,
+        3995532671
+      ],
+      "newMissesVsPaired": [
+        1425573776,
+        3733412389,
+        1620250702,
+        119198408,
+        1343449689,
+        454946629,
+        3995532671
+      ],
+      "baseline": {
+        "hits": 27,
+        "points": 1304
+      },
+      "ideal": {
+        "hits": 25,
+        "points": 1787
+      },
+      "paired": {
+        "hits": 24,
+        "points": 834
+      },
+      "candidate": {
+        "hits": 27,
+        "points": 1304
+      }
+    },
+    {
+      "id": "flat-820-minus2",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        3733412389,
+        119198408,
+        3995532671
+      ],
+      "newMissesVsPaired": [
+        1620250702,
+        2070038034,
+        119198408,
+        2913577951,
+        3995532671
+      ],
+      "baseline": {
+        "hits": 34,
+        "points": 1708
+      },
+      "ideal": {
+        "hits": 23,
+        "points": 1989
+      },
+      "paired": {
+        "hits": 31,
+        "points": 1089
+      },
+      "candidate": {
+        "hits": 34,
+        "points": 1708
+      }
+    },
+    {
+      "id": "flat-820-minus2",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 46,
+        "points": 2531
+      },
+      "ideal": {
+        "hits": 46,
+        "points": 4140
+      },
+      "paired": {
+        "hits": 48,
+        "points": 2231
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 2231
+      }
+    },
+    {
+      "id": "flat-880-plus8",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        1867251044,
+        1343449689,
+        2636752366,
+        3418307325,
+        3792572481
+      ],
+      "newMissesVsPaired": [
+        1867251044,
+        1343449689,
+        2636752366,
+        3418307325,
+        3792572481
+      ],
+      "baseline": {
+        "hits": 11,
+        "points": 264
+      },
+      "ideal": {
+        "hits": 11,
+        "points": 343
+      },
+      "paired": {
+        "hits": 11,
+        "points": 343
+      },
+      "candidate": {
+        "hits": 11,
+        "points": 264
+      }
+    },
+    {
+      "id": "flat-880-plus8",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        1425573776,
+        1620250702,
+        3938395859,
+        535103644,
+        3261909790,
+        1759658029,
+        2636752366,
+        1100178536,
+        3418307325
+      ],
+      "newMissesVsPaired": [
+        1425573776,
+        1620250702,
+        3938395859,
+        535103644,
+        3261909790,
+        1759658029,
+        2636752366,
+        1100178536,
+        3418307325
+      ],
+      "baseline": {
+        "hits": 20,
+        "points": 468
+      },
+      "ideal": {
+        "hits": 27,
+        "points": 845
+      },
+      "paired": {
+        "hits": 27,
+        "points": 845
+      },
+      "candidate": {
+        "hits": 20,
+        "points": 468
+      }
+    },
+    {
+      "id": "flat-880-plus8",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 26,
+        "points": 926
+      },
+      "ideal": {
+        "hits": 48,
+        "points": 2059
+      },
+      "paired": {
+        "hits": 48,
+        "points": 2059
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 1425
+      }
+    },
+    {
+      "id": "left-820-plus2",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        1620250702,
+        2070038034,
+        2913577951,
+        934575712,
+        3261909790,
+        1148748195,
+        3661570274,
+        1956261083,
+        4272350060,
+        2636752366,
+        1100178536,
+        3596060587
+      ],
+      "newMissesVsPaired": [
+        1620250702,
+        2070038034,
+        2913577951,
+        934575712,
+        3261909790,
+        1148748195,
+        3661570274,
+        1956261083,
+        4272350060,
+        2636752366,
+        1100178536,
+        3596060587
+      ],
+      "baseline": {
+        "hits": 21,
+        "points": 992
+      },
+      "ideal": {
+        "hits": 26,
+        "points": 1830
+      },
+      "paired": {
+        "hits": 26,
+        "points": 1830
+      },
+      "candidate": {
+        "hits": 21,
+        "points": 992
+      }
+    },
+    {
+      "id": "left-820-plus2",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        934575712,
+        1148748195,
+        1956261083,
+        4272350060,
+        2636752366,
+        1100178536
+      ],
+      "newMissesVsPaired": [
+        934575712,
+        1148748195,
+        1956261083,
+        4272350060,
+        2636752366,
+        1100178536
+      ],
+      "baseline": {
+        "hits": 34,
+        "points": 1404
+      },
+      "ideal": {
+        "hits": 30,
+        "points": 2588
+      },
+      "paired": {
+        "hits": 30,
+        "points": 2588
+      },
+      "candidate": {
+        "hits": 34,
+        "points": 1404
+      }
+    },
+    {
+      "id": "left-820-plus2",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 42,
+        "points": 2241
+      },
+      "ideal": {
+        "hits": 36,
+        "points": 3240
+      },
+      "paired": {
+        "hits": 48,
+        "points": 2214
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 2214
+      }
+    },
+    {
+      "id": "range300-high",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        3733412389,
+        3938395859,
+        119198408,
+        4069398198,
+        4272350060,
+        657750131,
+        2847936132,
+        1065832903,
+        3418307325
+      ],
+      "newMissesVsPaired": [
+        3733412389,
+        3938395859,
+        119198408,
+        4069398198,
+        4272350060,
+        657750131,
+        2847936132,
+        1065832903,
+        3418307325
+      ],
+      "baseline": {
+        "hits": 27,
+        "points": 1321
+      },
+      "ideal": {
+        "hits": 25,
+        "points": 1753
+      },
+      "paired": {
+        "hits": 25,
+        "points": 1753
+      },
+      "candidate": {
+        "hits": 27,
+        "points": 1321
+      }
+    },
+    {
+      "id": "range300-high",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        3938395859,
+        535103644,
+        731747658,
+        934575712,
+        2636752366,
+        1100178536,
+        3418307325
+      ],
+      "newMissesVsPaired": [
+        3938395859,
+        535103644,
+        731747658,
+        934575712,
+        1148748195,
+        2636752366,
+        1100178536,
+        3418307325
+      ],
+      "baseline": {
+        "hits": 36,
+        "points": 1862
+      },
+      "ideal": {
+        "hits": 38,
+        "points": 3360
+      },
+      "paired": {
+        "hits": 44,
+        "points": 1424
+      },
+      "candidate": {
+        "hits": 36,
+        "points": 1862
+      }
+    },
+    {
+      "id": "range300-high",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 36,
+        "points": 1930
+      },
+      "ideal": {
+        "hits": 48,
+        "points": 4320
+      },
+      "paired": {
+        "hits": 48,
+        "points": 4320
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 4320
+      }
+    },
+    {
+      "id": "range500-low",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        2070038034,
+        2913577951,
+        3261909790,
+        454946629,
+        871154985,
+        1100178536,
+        3995532671
+      ],
+      "newMissesVsPaired": [
+        2070038034,
+        2913577951,
+        3261909790,
+        454946629,
+        871154985,
+        1100178536,
+        3995532671
+      ],
+      "baseline": {
+        "hits": 16,
+        "points": 415
+      },
+      "ideal": {
+        "hits": 16,
+        "points": 466
+      },
+      "paired": {
+        "hits": 16,
+        "points": 466
+      },
+      "candidate": {
+        "hits": 16,
+        "points": 415
+      }
+    },
+    {
+      "id": "range500-low",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        1425573776,
+        3733412389,
+        3938395859,
+        535103644,
+        2716983073,
+        2913577951,
+        934575712,
+        1148748195,
+        1759658029,
+        1956261083,
+        4272350060,
+        2440157488,
+        2636752366,
+        871154985,
+        1100178536,
+        3418307325,
+        3596060587
+      ],
+      "newMissesVsPaired": [
+        1425573776,
+        3733412389,
+        3938395859,
+        535103644,
+        2716983073,
+        731747658,
+        2913577951,
+        934575712,
+        1148748195,
+        3456586804,
+        1759658029,
+        1956261083,
+        4272350060,
+        2440157488,
+        2636752366,
+        871154985,
+        1100178536,
+        3418307325,
+        3596060587
+      ],
+      "baseline": {
+        "hits": 23,
+        "points": 697
+      },
+      "ideal": {
+        "hits": 39,
+        "points": 1316
+      },
+      "paired": {
+        "hits": 42,
+        "points": 1074
+      },
+      "candidate": {
+        "hits": 23,
+        "points": 697
+      }
+    },
+    {
+      "id": "range500-low",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 26,
+        "points": 1030
+      },
+      "ideal": {
+        "hits": 48,
+        "points": 2256
+      },
+      "paired": {
+        "hits": 48,
+        "points": 2256
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 2256
+      }
+    },
+    {
+      "id": "flat-820-wind",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        1425573776,
+        3733412389,
+        119198408,
+        3261909790,
+        4069398198,
+        454946629,
+        657750131,
+        2847936132,
+        1065832903
+      ],
+      "newMissesVsPaired": [
+        1425573776,
+        3733412389,
+        119198408,
+        3261909790,
+        4069398198,
+        454946629,
+        657750131,
+        2847936132,
+        1065832903
+      ],
+      "baseline": {
+        "hits": 25,
+        "points": 1270
+      },
+      "ideal": {
+        "hits": 24,
+        "points": 1776
+      },
+      "paired": {
+        "hits": 24,
+        "points": 1776
+      },
+      "candidate": {
+        "hits": 25,
+        "points": 1270
+      }
+    },
+    {
+      "id": "flat-820-wind",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        3733412389,
+        119198408,
+        3995532671
+      ],
+      "newMissesVsPaired": [
+        3733412389,
+        1620250702,
+        119198408,
+        2913577951,
+        1759658029,
+        4272350060,
+        3596060587,
+        3995532671
+      ],
+      "baseline": {
+        "hits": 35,
+        "points": 1689
+      },
+      "ideal": {
+        "hits": 22,
+        "points": 1897
+      },
+      "paired": {
+        "hits": 43,
+        "points": 1045
+      },
+      "candidate": {
+        "hits": 35,
+        "points": 1689
+      }
+    },
+    {
+      "id": "flat-820-wind",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 42,
+        "points": 2245
+      },
+      "ideal": {
+        "hits": 40,
+        "points": 3600
+      },
+      "paired": {
+        "hits": 48,
+        "points": 2252
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 2252
+      }
+    },
+    {
+      "id": "flat-780-lowgrav",
+      "difficulty": "easy",
+      "count": 48,
+      "newMissesVsIdeal": [
+        1425573776,
+        3733412389,
+        1867251044,
+        4049056649,
+        119198408,
+        3872886168,
+        657750131,
+        1065832903
+      ],
+      "newMissesVsPaired": [
+        1425573776,
+        3733412389,
+        1867251044,
+        4049056649,
+        119198408,
+        3872886168,
+        657750131,
+        1065832903
+      ],
+      "baseline": {
+        "hits": 23,
+        "points": 1148
+      },
+      "ideal": {
+        "hits": 22,
+        "points": 1667
+      },
+      "paired": {
+        "hits": 22,
+        "points": 1667
+      },
+      "candidate": {
+        "hits": 23,
+        "points": 1148
+      }
+    },
+    {
+      "id": "flat-780-lowgrav",
+      "difficulty": "normal",
+      "count": 48,
+      "newMissesVsIdeal": [
+        3733412389,
+        119198408,
+        3052968882,
+        3995532671
+      ],
+      "newMissesVsPaired": [
+        1620250702,
+        119198408,
+        3261909790,
+        1343449689,
+        3052968882,
+        3792572481,
+        3995532671
+      ],
+      "baseline": {
+        "hits": 31,
+        "points": 1550
+      },
+      "ideal": {
+        "hits": 22,
+        "points": 1901
+      },
+      "paired": {
+        "hits": 26,
+        "points": 799
+      },
+      "candidate": {
+        "hits": 31,
+        "points": 1550
+      }
+    },
+    {
+      "id": "flat-780-lowgrav",
+      "difficulty": "hard",
+      "count": 48,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 42,
+        "points": 2128
+      },
+      "ideal": {
+        "hits": 40,
+        "points": 3600
+      },
+      "paired": {
+        "hits": 48,
+        "points": 2013
+      },
+      "candidate": {
+        "hits": 48,
+        "points": 1409
+      }
+    },
+    {
+      "id": "natural-hills",
+      "difficulty": "hard",
+      "count": 8,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 7,
+        "points": 430
+      },
+      "ideal": {
+        "hits": 8,
+        "points": 591
+      },
+      "paired": {
+        "hits": 8,
+        "points": 591
+      },
+      "candidate": {
+        "hits": 8,
+        "points": 591
+      }
+    },
+    {
+      "id": "natural-ridge",
+      "difficulty": "hard",
+      "count": 8,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 6,
+        "points": 353
+      },
+      "ideal": {
+        "hits": 8,
+        "points": 571
+      },
+      "paired": {
+        "hits": 8,
+        "points": 571
+      },
+      "candidate": {
+        "hits": 8,
+        "points": 571
+      }
+    },
+    {
+      "id": "natural-bowl",
+      "difficulty": "hard",
+      "count": 8,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 5,
+        "points": 278
+      },
+      "ideal": {
+        "hits": 8,
+        "points": 419
+      },
+      "paired": {
+        "hits": 8,
+        "points": 419
+      },
+      "candidate": {
+        "hits": 8,
+        "points": 387
+      }
+    },
+    {
+      "id": "natural-terraces",
+      "difficulty": "hard",
+      "count": 8,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 7,
+        "points": 441
+      },
+      "ideal": {
+        "hits": 8,
+        "points": 720
+      },
+      "paired": {
+        "hits": 8,
+        "points": 720
+      },
+      "candidate": {
+        "hits": 8,
+        "points": 720
+      }
+    },
+    {
+      "id": "natural-arches",
+      "difficulty": "hard",
+      "count": 8,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 7,
+        "points": 430
+      },
+      "ideal": {
+        "hits": 8,
+        "points": 591
+      },
+      "paired": {
+        "hits": 8,
+        "points": 591
+      },
+      "candidate": {
+        "hits": 8,
+        "points": 591
+      }
+    },
+    {
+      "id": "natural-plain",
+      "difficulty": "hard",
+      "count": 8,
+      "newMissesVsIdeal": [],
+      "newMissesVsPaired": [],
+      "baseline": {
+        "hits": 6,
+        "points": 368
+      },
+      "ideal": {
+        "hits": 7,
+        "points": 586
+      },
+      "paired": {
+        "hits": 8,
+        "points": 373
+      },
+      "candidate": {
+        "hits": 8,
+        "points": 373
+      }
+    }
+  ],
+  "regressions": [
+    {
+      "label": "baseline",
+      "cases": [
+        {
+          "id": "flat-740-minus8",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.7416627838631674,
+                "power": 97.53081432431937,
+                "error": 9.226115854052068
+              },
+              "cost": 0.10000014305114746,
+              "decisionRng": 253720840,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.7416627838631674,
+                "power": 97.53081432431937,
+                "error": 9.226115854052068
+              },
+              "cost": 0.09999990463256836,
+              "decisionRng": 253720840,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-820-minus2",
+          "difficulty": "easy",
+          "seed": 4049056649,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 4049056649,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 59.05808153375983,
+                "power": 80.09158702846617,
+                "error": 12.17030120396084
+              },
+              "cost": 0.7000000476837158,
+              "decisionRng": 2175581026,
+              "points": 9,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 562,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 4049056649,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 59.05808153375983,
+                "power": 80.09158702846617,
+                "error": 12.170301203960808
+              },
+              "cost": 1.2000000476837158,
+              "decisionRng": 2175581026,
+              "points": 9,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 562,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-820-minus2",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.5093838691711428,
+                "power": 97.53081432431937,
+                "error": 12.165525060596437
+              },
+              "cost": 0.20000004768371582,
+              "decisionRng": 253720840,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.5093838691711428,
+                "power": 97.53081432431937,
+                "error": 12.165525060596437
+              },
+              "cost": 0.10000014305114746,
+              "decisionRng": 253720840,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-780-lowgrav",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.5093838691711428,
+                "power": 97.53081432431937,
+                "error": 14.142135623730951
+              },
+              "cost": 0.09999990463256836,
+              "decisionRng": 253720840,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.5093838691711428,
+                "power": 97.53081432431937,
+                "error": 14.142135623730951
+              },
+              "cost": 0,
+              "decisionRng": 253720840,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ideal",
+      "cases": [
+        {
+          "id": "flat-740-minus8",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0,
+                "power": 100,
+                "error": 8.999977401646513
+              },
+              "cost": 3.700000047683716,
+              "decisionRng": 3892259831,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0,
+                "power": 100,
+                "error": 8.999977401646513
+              },
+              "cost": 1.3999998569488525,
+              "decisionRng": 3892259831,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-820-minus2",
+          "difficulty": "easy",
+          "seed": 4049056649,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 4049056649,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.06280253380537015,
+                "power": 100,
+                "error": 12
+              },
+              "cost": 1.2999999523162842,
+              "decisionRng": 3470716994,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 4049056649,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.06280253380537015,
+                "power": 100,
+                "error": 12
+              },
+              "cost": 1.5,
+              "decisionRng": 3470716994,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-820-minus2",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0,
+                "power": 100,
+                "error": 12
+              },
+              "cost": 1.6000001430511475,
+              "decisionRng": 3892259831,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0,
+                "power": 100,
+                "error": 12
+              },
+              "cost": 1.2000000476837158,
+              "decisionRng": 3892259831,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-780-lowgrav",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0,
+                "power": 100,
+                "error": 14
+              },
+              "cost": 2.1999998092651367,
+              "decisionRng": 3892259831,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0,
+                "power": 100,
+                "error": 14
+              },
+              "cost": 2,
+              "decisionRng": 3892259831,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "paired",
+      "cases": [
+        {
+          "id": "flat-740-minus8",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 67.58903675675393,
+                "power": 88.27492922563106,
+                "error": 12.555625948783037
+              },
+              "cost": 1.7999999523162842,
+              "decisionRng": 3892259831,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 640,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 67.58903675675393,
+                "power": 88.27492922563106,
+                "error": 12.555625948782918
+              },
+              "cost": 1.5,
+              "decisionRng": 3892259831,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 640,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-820-minus2",
+          "difficulty": "easy",
+          "seed": 4049056649,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 4049056649,
+              "name": "Big Shot",
+              "aim": {
+                "angle": 61.06280253380537,
+                "power": 84.31324980314821,
+                "error": 12.17030120396084
+              },
+              "cost": 1.6000001430511475,
+              "decisionRng": 3470716994,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 593,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 4049056649,
+              "name": "Big Shot",
+              "aim": {
+                "angle": 61.06280253380537,
+                "power": 84.31324980314821,
+                "error": 12.170301203960808
+              },
+              "cost": 1.9000000953674316,
+              "decisionRng": 3470716994,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 593,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-820-minus2",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 59.58903675675392,
+                "power": 82.27492922563106,
+                "error": 12.17030120396084
+              },
+              "cost": 1.3999998569488525,
+              "decisionRng": 3892259831,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 576,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 59.58903675675392,
+                "power": 82.27492922563106,
+                "error": 12.170301203960808
+              },
+              "cost": 1.7000000476837158,
+              "decisionRng": 3892259831,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 576,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-780-lowgrav",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 71.58903675675393,
+                "power": 74.27492922563106,
+                "error": 12.265318632866071
+              },
+              "cost": 2.1000001430511475,
+              "decisionRng": 3892259831,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 937,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 71.58903675675393,
+                "power": 74.27492922563106,
+                "error": 12.26531863286612
+              },
+              "cost": 2.0999999046325684,
+              "decisionRng": 3892259831,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 937,
+              "safetyTimeouts": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "candidate",
+      "cases": [
+        {
+          "id": "flat-740-minus8",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.7416627838631674,
+                "power": 97.53081432431937,
+                "error": 8.999977401646513
+              },
+              "cost": 0.20000004768371582,
+              "decisionRng": 253720840,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.7416627838631674,
+                "power": 97.53081432431937,
+                "error": 8.999977401646513
+              },
+              "cost": 0,
+              "decisionRng": 253720840,
+              "points": 90,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-820-minus2",
+          "difficulty": "easy",
+          "seed": 4049056649,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 4049056649,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 59.05808153375983,
+                "power": 80.09158702846617,
+                "error": 12.17030120396084
+              },
+              "cost": 0.9000000953674316,
+              "decisionRng": 2175581026,
+              "points": 9,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 562,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 4049056649,
+              "name": "Single Shot",
+              "aim": {
+                "angle": 59.05808153375983,
+                "power": 80.09158702846617,
+                "error": 12.170301203960808
+              },
+              "cost": 0.7000000476837158,
+              "decisionRng": 2175581026,
+              "points": 9,
+              "selfHits": 0,
+              "terrainChanged": true,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 562,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-820-minus2",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.5093838691711428,
+                "power": 97.53081432431937,
+                "error": 12
+              },
+              "cost": 0.09999990463256836,
+              "decisionRng": 253720840,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.5093838691711428,
+                "power": 97.53081432431937,
+                "error": 12
+              },
+              "cost": 0,
+              "decisionRng": 253720840,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        },
+        {
+          "id": "flat-780-lowgrav",
+          "difficulty": "normal",
+          "seed": 3733412389,
+          "rows": [
+            {
+              "sx": 140,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.5093838691711428,
+                "power": 97.53081432431937,
+                "error": 14
+              },
+              "cost": 0.20000004768371582,
+              "decisionRng": 253720840,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            },
+            {
+              "sx": 190,
+              "seed": 3733412389,
+              "name": "Super Laser",
+              "aim": {
+                "angle": 0.5093838691711428,
+                "power": 97.53081432431937,
+                "error": 14
+              },
+              "cost": 0.20000004768371582,
+              "decisionRng": 253720840,
+              "points": 0,
+              "selfHits": 0,
+              "terrainChanged": false,
+              "buriedBefore": false,
+              "buriedAfter": false,
+              "turn": 1,
+              "steps": 92,
+              "safetyTimeouts": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "maxCalls": 752,
+  "passed": true
+}

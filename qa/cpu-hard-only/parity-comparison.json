@@ -1,0 +1,539 @@
+{
+  "sources": [
+    {
+      "label": "baseline",
+      "sourceSha256": "000d7bd6b903289787bb6e1b39f8a7b929ffc6510fcbce4c664f131d4496a0be"
+    },
+    {
+      "label": "prior",
+      "sourceSha256": "1fc820b388328d641280742642d9343559bb8171790eff5bb9050d2c1c75a6d6"
+    },
+    {
+      "label": "candidate",
+      "sourceSha256": "86fa612fd31fcacefe085a496ae3bb895735f030652d9de90b744dcea6db57c8"
+    }
+  ],
+  "groups": [
+    {
+      "id": "740-up8",
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main",
+      "baseline": {
+        "shots": 128,
+        "hits": 62,
+        "points": 3196,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 61,
+        "points": 4339,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 62,
+        "points": 3196,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "740-up8",
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main",
+      "baseline": {
+        "shots": 128,
+        "hits": 92,
+        "points": 4532,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 88,
+        "points": 6832,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 92,
+        "points": 4532,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "740-up8",
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa",
+      "baseline": {
+        "shots": 128,
+        "hits": 128,
+        "points": 7578,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 128,
+        "points": 11520,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 128,
+        "points": 11520,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "820-up2",
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main",
+      "baseline": {
+        "shots": 128,
+        "hits": 59,
+        "points": 3138,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 54,
+        "points": 3952,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 59,
+        "points": 3138,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "820-up2",
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main",
+      "baseline": {
+        "shots": 128,
+        "hits": 88,
+        "points": 4100,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 81,
+        "points": 6179,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 88,
+        "points": 4100,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "820-up2",
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa",
+      "baseline": {
+        "shots": 128,
+        "hits": 114,
+        "points": 6503,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 128,
+        "points": 5943,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 128,
+        "points": 5943,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "820-wind",
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main",
+      "baseline": {
+        "shots": 128,
+        "hits": 60,
+        "points": 3083,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 53,
+        "points": 3825,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 60,
+        "points": 3083,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "820-wind",
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main",
+      "baseline": {
+        "shots": 128,
+        "hits": 87,
+        "points": 4064,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 113,
+        "points": 3550,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 87,
+        "points": 4064,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "820-wind",
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa",
+      "baseline": {
+        "shots": 128,
+        "hits": 99,
+        "points": 5383,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 128,
+        "points": 6011,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 128,
+        "points": 6011,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "780-lowGravity",
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main",
+      "baseline": {
+        "shots": 128,
+        "hits": 54,
+        "points": 2968,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 48,
+        "points": 3653,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 54,
+        "points": 2968,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "780-lowGravity",
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main",
+      "baseline": {
+        "shots": 128,
+        "hits": 74,
+        "points": 3675,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 69,
+        "points": 5563,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 74,
+        "points": 3675,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    },
+    {
+      "id": "780-lowGravity",
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa",
+      "baseline": {
+        "shots": 128,
+        "hits": 100,
+        "points": 5324,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 128,
+        "hits": 128,
+        "points": 3780,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 128,
+        "hits": 128,
+        "points": 3780,
+        "selfHitShots": 0
+      },
+      "newMissesVsBaseline": []
+    }
+  ],
+  "matchParity": [
+    {
+      "seed": 6173,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 7182,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 8191,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 9200,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 10209,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 11218,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 12227,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 13236,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 14245,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 15254,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 16263,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 17272,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 6173,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 7182,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 8191,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 9200,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 10209,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 11218,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 12227,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 13236,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 14245,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 15254,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 16263,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 17272,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 6173,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 7182,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 8191,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 9200,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 10209,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 11218,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 12227,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 13236,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 14245,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 15254,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 16263,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 17272,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    }
+  ],
+  "singleWeaponParity": 48,
+  "maxCalls": 752,
+  "passed": true
+}

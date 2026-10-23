@@ -1,0 +1,338 @@
+[
+  {
+    "name": "fire",
+    "exitCode": 1,
+    "expected": "battle: fire consumes exactly one shot",
+    "results": [
+      {
+        "name": "boot: POCKET hook present",
+        "ok": true,
+        "detail": "version 4.0.1"
+      },
+      {
+        "name": "boot: no boot error",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: shown with quick battle and online",
+        "ok": true,
+        "detail": "Quick battle You vs CPU"
+      },
+      {
+        "name": "title: tront.xyz link",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: no root-relative asset paths",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: no external scripts or fonts",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: arsenal lists 400 weapons",
+        "ok": true,
+        "detail": "weapons 400"
+      },
+      {
+        "name": "battle: quick battle opens the HUD",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "controls: labeled aiming and movement controls remain available",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: fire consumes exactly one shot",
+        "ok": false,
+        "detail": ""
+      },
+      {
+        "name": "battle: shot settles and advances the turn",
+        "ok": false,
+        "detail": ""
+      },
+      {
+        "name": "battle: shell changes the terrain",
+        "ok": false,
+        "detail": ""
+      },
+      {
+        "name": "menu: pause opens during battle",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "menu: resume returns to battle",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: complete quick match reaches results",
+        "ok": false,
+        "detail": "{\"scene\":\"battle\",\"turns\":0,\"shots\":0}"
+      },
+      {
+        "name": "battle: result scores are finite",
+        "ok": false,
+        "detail": ""
+      },
+      {
+        "name": "battle: field canvas drawing",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "menu: back to title after results",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "reload: title boots again",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "storage: origin storage usable (garage can persist)",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "console: no exceptions or errors",
+        "ok": true,
+        "detail": ""
+      }
+    ]
+  },
+  {
+    "name": "turn",
+    "exitCode": 1,
+    "expected": "battle: shot settles and advances the turn",
+    "results": [
+      {
+        "name": "boot: POCKET hook present",
+        "ok": true,
+        "detail": "version 4.0.1"
+      },
+      {
+        "name": "boot: no boot error",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: shown with quick battle and online",
+        "ok": true,
+        "detail": "Quick battle You vs CPU"
+      },
+      {
+        "name": "title: tront.xyz link",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: no root-relative asset paths",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: no external scripts or fonts",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: arsenal lists 400 weapons",
+        "ok": true,
+        "detail": "weapons 400"
+      },
+      {
+        "name": "battle: quick battle opens the HUD",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "controls: labeled aiming and movement controls remain available",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: fire consumes exactly one shot",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: shot settles and advances the turn",
+        "ok": false,
+        "detail": ""
+      },
+      {
+        "name": "battle: shell changes the terrain",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "menu: pause opens during battle",
+        "ok": false,
+        "detail": ""
+      },
+      {
+        "name": "menu: resume returns to battle",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: complete quick match reaches results",
+        "ok": false,
+        "detail": "{\"scene\":\"title\",\"turns\":0,\"shots\":1}"
+      },
+      {
+        "name": "battle: result scores are finite",
+        "ok": false,
+        "detail": ""
+      },
+      {
+        "name": "battle: field canvas drawing",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "menu: back to title after results",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "reload: title boots again",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "storage: origin storage usable (garage can persist)",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "console: no exceptions or errors",
+        "ok": true,
+        "detail": ""
+      }
+    ]
+  },
+  {
+    "name": "result",
+    "exitCode": 1,
+    "expected": "battle: complete quick match reaches results",
+    "results": [
+      {
+        "name": "boot: POCKET hook present",
+        "ok": true,
+        "detail": "version 4.0.1"
+      },
+      {
+        "name": "boot: no boot error",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: shown with quick battle and online",
+        "ok": true,
+        "detail": "Quick battle You vs CPU"
+      },
+      {
+        "name": "title: tront.xyz link",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: no root-relative asset paths",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: no external scripts or fonts",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "title: arsenal lists 400 weapons",
+        "ok": true,
+        "detail": "weapons 400"
+      },
+      {
+        "name": "battle: quick battle opens the HUD",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "controls: labeled aiming and movement controls remain available",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: fire consumes exactly one shot",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: shot settles and advances the turn",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: shell changes the terrain",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "menu: pause opens during battle",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "menu: resume returns to battle",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "battle: complete quick match reaches results",
+        "ok": false,
+        "detail": "{\"scene\":\"title\",\"turns\":20,\"shots\":20}"
+      },
+      {
+        "name": "battle: result scores are finite",
+        "ok": false,
+        "detail": ""
+      },
+      {
+        "name": "battle: field canvas drawing",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "menu: back to title after results",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "reload: title boots again",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "storage: origin storage usable (garage can persist)",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "console: no exceptions or errors",
+        "ok": true,
+        "detail": ""
+      }
+    ]
+  }
+]

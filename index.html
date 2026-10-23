@@ -599,8 +599,22 @@ function finishTurn(){G.locked=false;const p=active();p.best=Math.max(p.best,G.s
  G.shots++;if(G.shots>=20||players.every(p=>p.inventory.every(s=>s.used))){showResults();return;}
  G.turn=1-G.turn;const next=active();let idx=next.inventory.findIndex(s=>!s.used);next.selected=Math.max(0,idx);G.aiTimer=.9;G.aiAim=null;G.turnBanner=1.35;tone(G.turn?520:680,G.turn?650:810,.07,'triangle',.04);updateHud(true);
 }
+// Read-only beam trace follows laserLine's range, two-pixel steps, hit radius and
+// penetration budget. It must not carve terrain, award points or consume RNG.
+function predictLaser(shooter,angle,w,draw=false){const a=angle*DEG,m=muzzle(shooter,angle),dx=Math.cos(a),dy=-Math.sin(a),en=target(shooter.i),hit=new Set(),points=draw?[m.x,m.y]:null,r=w.r||4;let x=m.x,y=m.y,budget=w.penetrate||0,error=1e9,value=0,lastCarve=0,carve=null;
+ for(let d=0;d<1800;d+=2){x=m.x+dx*d;y=m.y+dy*d;if(x<0||x>=W||y<0||y>=FH)break;
+  error=Math.min(error,hypot(x-en.x,y-en.y+12));
+  for(const t of players){if(t.i===shooter.i&&d<40)continue;if(!hit.has(t.i)&&hypot(t.x-x,t.y-12-y)<16){hit.add(t.i);value+=(t.i===shooter.i?-1:1)*w.damage;}}
+  if(draw&&d%6===0)points.push(x,y);
+  // laserLine clears circles as it travels. The latest circle is the closest
+  // along this straight ray; reproduce circle's integer row bounds without writes.
+  let cleared=false;if(carve){const ix=Math.floor(x),iy=Math.floor(y),span=Math.sqrt(Math.max(0,r*r-(iy-carve.y)*(iy-carve.y)));cleared=iy>=Math.floor(carve.y-r)&&iy<=Math.ceil(carve.y+r)&&ix>=Math.ceil(carve.x-span)&&ix<=Math.floor(carve.x+span);}
+  if(!cleared&&mat(x,y)){if(budget<=0)break;budget-=2;if(d-lastCarve>5){carve={x,y};lastCarve=d;}}
+ }
+ return{x,y,error,value,points};
+}
 function predict(shooter,angle,power,w,draw=false){const rad=angle*DEG,m=muzzle(shooter,angle),v=power*5.5*w.speed;let x=m.x,y=m.y,vx=Math.cos(rad)*v,vy=-Math.sin(rad)*v,en=target(shooter.i),best=1e9,px=x,py=y,pts=draw?[x,y]:null;
- if(w.kind==='laser'){for(let i=0;i<1300;i+=5){x=m.x+Math.cos(rad)*i;y=m.y-Math.sin(rad)*i;best=Math.min(best,hypot(x-en.x,y-en.y+12));if(x<0||x>W||y<0||y>FH||mat(x,y))break;if(draw)pts.push(x,y);}return{x,y,error:best,points:pts};}
+ if(w.kind==='laser')return predictLaser(shooter,angle,w,draw);
  let lastdx=en.x-x,locked=false;
  for(let step=0;step<220;step++){const dt=.034;px=x;py=y;
   if(w.kind==='homing'){let dx=en.x-x;if(dx*lastdx<=0&&y<en.y-10){locked=true;vx=0;vy=100;}lastdx=dx;}
@@ -620,7 +634,23 @@ function solveAim(shooter,w=currentWeapon()){const en=target(shooter.i),directio
 }
 function prepareCPU(){const p=active(),available=p.inventory.map((s,i)=>({s,i})).filter(o=>!o.s.used);if(!available.length){finishTurn();return;}
  let choice=available[ri(0,available.length-1)];if(p.buried){const utility=available.find(o=>o.s.w.self||o.s.w.kind==='worm'||o.s.w.kind==='move');if(utility)choice=utility;}else{const damage=available.filter(o=>o.s.w.damage>0);if(damage.length&&rand()<.8)choice=damage[ri(0,damage.length-1)];}
- p.selected=choice.i;const w=choice.s.w,aim=solveAim(p,w),err=settings.difficulty==='easy'?{a:4.8,p:7}:settings.difficulty==='hard'?{a:.4,p:.8}:{a:1.6,p:2.8};aim.angle=clamp(aim.angle+rnd(-err.a,err.a),0,180);aim.power=clamp(aim.power+rnd(-err.p,err.p),1,100);G.aiAim=aim;G.aiTimer=1;updateHud(true);
+ // A deliberately small model: preserve the existing choices for bespoke payloads
+ // and buried recovery. Evaluate at most four distinct, familiar weapons per turn.
+ const modeled=['Single Shot','Big Shot','Laser','Super Laser'],plans=new Map(),err=settings.difficulty==='easy'?{a:4.8,p:7}:settings.difficulty==='hard'?{a:.4,p:.8}:{a:1.6,p:2.8};
+ const plan=w=>{if(!plans.has(w.id)){const aim=solveAim(p,w),valueAt=(angle,power)=>{const q=predict(p,angle,power,w);if(q.value!==undefined)return q.value;let value=0;for(const t of players){const d=Math.max(0,hypot(q.x-t.x,q.y-t.y+12)-14);if(d<=w.r)value+=(t.i===p.i?-1:1)*Math.max(1,Math.round(w.damage*(1-d/(w.r+1))));}return value;};
+   // Angle and power errors are independent: sample all corners and axes,
+   // not a diagonal where high-arc range errors can cancel. Beam power is inert.
+   // At most 752 predictions per decision; this grid is evidence, not a proof
+   // that every continuous error pair scores through arbitrary terrain.
+   const ideal=valueAt(aim.angle,aim.power);let value=ideal;for(const da of [-1,0,1])for(const dp of (w.kind==='laser'?[0]:[-1,0,1])){if(!da&&!dp)continue;value=Math.min(value,valueAt(clamp(aim.angle+da*err.a,0,180),clamp(aim.power+dp*err.p,1,100)));}
+   plans.set(w.id,{aim,value,ideal});}return plans.get(w.id);};
+ // Easy/Normal keep the original policy and RNG stream, without a comparison draw.
+ if(settings.difficulty==='hard'&&!p.buried&&modeled.includes(choice.s.w.name)){
+  let best=plan(choice.s.w),idealBest=best,idealChoice=choice;for(const o of available){if(!modeled.includes(o.s.w.name))continue;const next=plan(o.s.w);if(next.ideal>idealBest.ideal){idealBest=next;idealChoice=o;}if(next.value>best.value||next.value===best.value&&next.ideal>best.ideal){best=next;choice=o;}}
+  // No plan scores across the sampled errors: retain the prior ideal policy.
+  if(best.value<=0)choice=idealChoice;
+ }
+ p.selected=choice.i;const w=choice.s.w,aim=plans.has(w.id)?plans.get(w.id).aim:solveAim(p,w);aim.angle=clamp(aim.angle+rnd(-err.a,err.a),0,180);aim.power=clamp(aim.power+rnd(-err.p,err.p),1,100);G.aiAim=aim;G.aiTimer=1;updateHud(true);
 }
 function simStep(dt){if(G.toastTime>0){G.toastTime-=dt;if(G.toastTime<=0)$('toast').hidden=true;}
  if(G.overlay&&G.scene==='battle')return;G.time+=dt;G.tick++;
@@ -828,7 +858,7 @@ for(const [pack]of PACKS){const o=document.createElement('option');o.value=pack;
 // TINY TREADS 3.1 — UI polish, tank art pass, stronger attract mode, and weapon upgrades.
 // The artillery/material engine above remains independent of online transport.
 // ============================================================================
-const TT_VERSION='4.0.0';
+const TT_VERSION='4.0.1';
 const LAYOUTS={hills:'Rolling hills',ridge:'The great divide',bowl:'The punch bowl',terraces:'Stepping stones',arches:'Arch enemies',plain:"No man's lawn"};
 const RULES={classic:'Classic artillery',mirror:'Mirror arsenal',mystery:'Mystery magazine',trick:'Trick-shot pool'};
 const HULLS={scout:'Scout',boxer:'Boxer',dart:'Dart',bulldog:'Bulldog'},TURRETS={standard:'Cannon',twin:'Twin',stub:'Stubby'},FLAGS={none:'Clean',flag:'Pennant',aerial:'Aerial',bolt:'Lightning'};
@@ -966,13 +996,13 @@ function hullSprite(look){const key=look.body+'/'+look.color;if(styledHulls.has(
  // treads
  x.strokeStyle='#050805';x.lineWidth=1.3;let g=x.createLinearGradient(0,-16,0,1);g.addColorStop(0,'#8f998c');g.addColorStop(.27,'#1b231a');g.addColorStop(.78,'#0a1009');g.addColorStop(1,'#c2cdb8');x.fillStyle=g;round(x,-25,-15,50,15,box?4:7);x.fill();x.stroke();
  x.fillStyle='#0d150c';round(x,-21,-12,42,8,4);x.fill();
- for(let j=-18;j<=18;j+=7){x.fillStyle='#2c3929';x.strokeStyle='#a1ae88';x.lineWidth=.72;x.beginPath();x.arc(j,-8,3.4,0,TAU);x.fill();x.stroke();x.fillStyle='#dce6c0';x.fillRect(j-.7,-8.8,1.4,1.4);} 
+ for(let j=-18;j<=18;j+=7){x.fillStyle='#2c3929';x.strokeStyle='#a1ae88';x.lineWidth=.72;x.beginPath();x.arc(j,-8,3.4,0,TAU);x.fill();x.stroke();x.fillStyle='#dce6c0';x.fillRect(j-.7,-8.8,1.4,1.4);}
  x.strokeStyle='#77905e';x.lineWidth=.55;for(let j=-18;j<=16;j+=4){x.beginPath();x.moveTo(j,-4);x.lineTo(j+2,-2.2);x.stroke();}
  // hull
  g=x.createLinearGradient(0,-26,0,-9);g.addColorStop(0,'#fbffe9');g.addColorStop(.12,color);g.addColorStop(.50,color);g.addColorStop(.58,'#35452a');g.addColorStop(1,'#162211');x.fillStyle=g;x.strokeStyle=dark;x.lineWidth=1.25;
  const body=box?[[-23,-13],[-23,-23],[17,-23],[23,-17],[21,-11],[-21,-11]]:dart?[[-26,-12],[-8,-24],[7,-25],[25,-13],[20,-10],[-20,-10]]:[[-24,-13],[-17,-25],[14,-25],[24,-14],[19,-10],[-19,-10]];path(x,body);x.fill();x.stroke();
  x.strokeStyle='#efffcc';x.lineWidth=.65;x.beginPath();x.moveTo(-17,-21);x.lineTo(13,-21);x.stroke();
- x.fillStyle=steel;round(x,-11,-17,16,4,2);x.fill();x.fillStyle=color;x.fillRect(-10,-17,14,1.2);for(let i=0;i<3;i++){x.fillStyle=dark;x.fillRect(10+i*2,-17,1,3);} 
+ x.fillStyle=steel;round(x,-11,-17,16,4,2);x.fill();x.fillStyle=color;x.fillRect(-10,-17,14,1.2);for(let i=0;i<3;i++){x.fillStyle=dark;x.fillRect(10+i*2,-17,1,3);}
  x.fillStyle='#ffe8a7';x.fillRect(18,-16,2,2);x.fillStyle='#341307';x.fillRect(-20,-15,2,2);x.fillStyle=olive;x.fillRect(-18,-14,3,2);
  // fin / ornament base by body
  if(box){x.fillStyle='#2f3e24';x.fillRect(-2,-26,6,4);} else if(dart){x.fillStyle='#2a361f';path(x,[[-4,-24],[0,-30],[4,-24]]);x.fill();} else {x.fillStyle='#2f3c24';path(x,[[-1,-25],[4,-29],[7,-24],[2,-22]]);x.fill();}
