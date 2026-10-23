@@ -629,7 +629,8 @@ function prepareCPU(){const p=active(),available=p.inventory.map((s,i)=>({s,i}))
    // that every continuous error pair scores through arbitrary terrain.
    const ideal=valueAt(aim.angle,aim.power);let value=ideal;for(const da of [-1,0,1])for(const dp of (w.kind==='laser'?[0]:[-1,0,1])){if(!da&&!dp)continue;value=Math.min(value,valueAt(clamp(aim.angle+da*err.a,0,180),clamp(aim.power+dp*err.p,1,100)));}
    plans.set(w.id,{aim,value,ideal});}return plans.get(w.id);};
- if(!p.buried&&modeled.includes(choice.s.w.name)&&(settings.difficulty==='hard'||rand()<(settings.difficulty==='easy'?.35:.7))){
+ // Easy/Normal keep the original policy and RNG stream, without a comparison draw.
+ if(settings.difficulty==='hard'&&!p.buried&&modeled.includes(choice.s.w.name)){
   let best=plan(choice.s.w),idealBest=best,idealChoice=choice;for(const o of available){if(!modeled.includes(o.s.w.name))continue;const next=plan(o.s.w);if(next.ideal>idealBest.ideal){idealBest=next;idealChoice=o;}if(next.value>best.value||next.value===best.value&&next.ideal>best.ideal){best=next;choice=o;}}
   // No plan scores across the sampled errors: retain the prior ideal policy.
   if(best.value<=0)choice=idealChoice;

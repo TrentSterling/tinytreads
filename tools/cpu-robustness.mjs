@@ -40,13 +40,15 @@ for(let index=0;index<paths.length;index++){
  reports.push(report);
 }
 const summary={sources:reports.map(r=>({label:r.label,sha256:r.sourceSha256})),groups:[]};
+const stableShot=({cost,aim,...rest})=>({...rest,angle:aim.angle,power:aim.power});
 for(let i=0;i<group.length;i++){
  const row={id:group[i].id,difficulty:group[i].difficulty,count:group[i].seeds.length};
  for(const r of reports){const rows=r.groups[i].rows;row[r.label]={scoring:rows.filter(q=>q.points>0).length,points:rows.reduce((s,q)=>s+q.points,0),selfHitShots:rows.filter(q=>q.selfHits>0).length};}
  const base=reports[0].groups[i].rows,held=reports[1].groups[i].rows,candidate=reports[2].groups[i].rows;
  row.newMissesVsBaseline=candidate.filter((q,j)=>base[j].points>0&&q.points<=0).map(q=>q.seed);
  row.newMissesVsHeld=candidate.filter((q,j)=>held[j].points>0&&q.points<=0).map(q=>q.seed);
- assert.ok(candidate.every((q,j)=>q.decisionRng===held[j].decisionRng),'selection must consume exactly the original RNG sequence');
+ assert.ok(candidate.every((q,j)=>q.decisionRng===base[j].decisionRng),'selection must consume exactly original-main RNG');
+ if(row.difficulty!=='hard')assert.deepEqual(candidate.map(stableShot),base.map(stableShot),'Easy/Normal must match original-main gameplay');
  summary.groups.push(row);
 }
 const hardFlat=summary.groups.find(g=>g.id==='review-flat'&&g.difficulty==='hard');
@@ -56,7 +58,7 @@ writeFileSync(resolve(out,'comparison.json'),JSON.stringify(summary,null,2));
 assert.ok(seed4.points>0&&seed4.name==='Single Shot','regression: robust shell should beat fragile beam');
 assert.equal(hardFlat.newMissesVsBaseline.length,0,'Hard flat distribution must not introduce hit-to-miss regressions');
 assert.ok(hardFlat.candidate.scoring>=hardFlat.baseline.scoring);
-assert.ok(summary.groups.every(g=>g.newMissesVsHeld.length===0),'follow-up must not introduce hit-to-miss regressions against held candidate in this distribution');
-assert.ok(summary.groups.filter(g=>g.difficulty==='hard').every(g=>g.newMissesVsBaseline.length===0),'Hard geometry neighborhoods must not introduce hit-to-miss regressions against baseline');
+assert.ok(summary.groups.filter(g=>g.difficulty==='hard').every(g=>g.newMissesVsHeld.length===0),'Hard must not introduce hit-to-miss regressions against held candidate in this distribution');
+assert.ok(summary.groups.every(g=>g.newMissesVsBaseline.length===0),'geometry neighborhoods must not introduce hit-to-miss regressions against original main');
 summary.passed=true;writeFileSync(resolve(out,'comparison.json'),JSON.stringify(summary,null,2));
 console.log(JSON.stringify({totalShotsPerSource:summary.totalShotsPerSource,hardFlat,seed4:{name:seed4.name,points:seed4.points},rngSequencePreserved:true},null,2));

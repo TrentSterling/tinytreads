@@ -1,0 +1,311 @@
+{
+  "sourceSha256": "86fa612fd31fcacefe085a496ae3bb895735f030652d9de90b744dcea6db57c8",
+  "passed": true,
+  "parityMatches": [
+    {
+      "seed": 6173,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 7182,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 8191,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 9200,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 10209,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 11218,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 12227,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 13236,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 14245,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 15254,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 16263,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 17272,
+      "difficulty": "easy",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 6173,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 7182,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 8191,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 9200,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 10209,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 11218,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 12227,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 13236,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 14245,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 15254,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 16263,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 17272,
+      "difficulty": "normal",
+      "exactParity": true,
+      "reference": "original-main"
+    },
+    {
+      "seed": 6173,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 7182,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 8191,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 9200,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 10209,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 11218,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 12227,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 13236,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 14245,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 15254,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 16263,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    },
+    {
+      "seed": 17272,
+      "difficulty": "hard",
+      "exactParity": true,
+      "reference": "0c80efa"
+    }
+  ],
+  "oneOptionCases": 48,
+  "maxPredictionCalls": 752,
+  "freshDifficulty": [
+    {
+      "difficulty": "easy",
+      "baseline": {
+        "shots": 512,
+        "hits": 235,
+        "points": 12385,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 512,
+        "hits": 216,
+        "points": 15769,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 512,
+        "hits": 235,
+        "points": 12385,
+        "selfHitShots": 0
+      }
+    },
+    {
+      "difficulty": "normal",
+      "baseline": {
+        "shots": 512,
+        "hits": 341,
+        "points": 16371,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 512,
+        "hits": 351,
+        "points": 22124,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 512,
+        "hits": 341,
+        "points": 16371,
+        "selfHitShots": 0
+      }
+    },
+    {
+      "difficulty": "hard",
+      "baseline": {
+        "shots": 512,
+        "hits": 441,
+        "points": 24788,
+        "selfHitShots": 0
+      },
+      "prior": {
+        "shots": 512,
+        "hits": 512,
+        "points": 27254,
+        "selfHitShots": 0
+      },
+      "candidate": {
+        "shots": 512,
+        "hits": 512,
+        "points": 27254,
+        "selfHitShots": 0
+      }
+    }
+  ],
+  "fullSuite": {
+    "shots": 260,
+    "completeMatches": 8,
+    "selfHitShots": 0,
+    "totalPoints": 7657,
+    "terrainChangeShots": 213,
+    "decisionMs": {
+      "p50": 0.5999999046325684,
+      "p95": 1.3000001907348633,
+      "max": 6.200000047683716
+    }
+  },
+  "buriedRecovered": 12,
+  "hardSeed4": {
+    "name": "Single Shot",
+    "points": 47
+  },
+  "smoke": {
+    "desktop": 21,
+    "narrow": 21,
+    "negativeCases": 3
+  }
+}

@@ -39,14 +39,15 @@ for(let i=0;i<paths.length;i++){
  reports.push(r);console.log(`${label}: ${r.groups.reduce((n,g)=>n+g.rows.length,0)} neighborhood shots and ${r.regressions.length*2} translated regression shots`);
 }
 const summary={sources:reports.map(r=>({label:r.label,sha256:r.sourceSha256})),groups:[],regressions:reports.map(r=>({label:r.label,cases:r.regressions})),maxCalls:0};
+const stableShot=({cost,calls,aim,...rest})=>({...rest,angle:aim.angle,power:aim.power});
 for(let i=0;i<groups.length;i++){
  const entry={id:groups[i].id,difficulty:groups[i].difficulty,count:groups[i].seeds.length,newMissesVsIdeal:[],newMissesVsPaired:[]};
  for(const r of reports){const rows=r.groups[i].rows;entry[r.label]={hits:rows.filter(q=>q.points>0).length,points:rows.reduce((s,q)=>s+q.points,0)};}
- for(let j=0;j<groups[i].seeds.length;j++){const c=reports[3].groups[i].rows[j],ideal=reports[1].groups[i].rows[j],paired=reports[2].groups[i].rows[j];assert.equal(c.decisionRng,ideal.decisionRng);assert.ok(c.calls<=752);summary.maxCalls=Math.max(summary.maxCalls,c.calls);if(c.points<=0&&ideal.points>0)entry.newMissesVsIdeal.push(c.seed);if(c.points<=0&&paired.points>0)entry.newMissesVsPaired.push(c.seed);}
+ for(let j=0;j<groups[i].seeds.length;j++){const c=reports[3].groups[i].rows[j],base=reports[0].groups[i].rows[j],ideal=reports[1].groups[i].rows[j],paired=reports[2].groups[i].rows[j];assert.equal(c.decisionRng,base.decisionRng);if(entry.difficulty!=='hard')assert.deepEqual(stableShot(c),stableShot(base));assert.ok(c.calls<=752);summary.maxCalls=Math.max(summary.maxCalls,c.calls);if(c.points<=0&&ideal.points>0)entry.newMissesVsIdeal.push(c.seed);if(c.points<=0&&paired.points>0)entry.newMissesVsPaired.push(c.seed);}
  summary.groups.push(entry);
 }
 writeFileSync(resolve(out,'comparison.json'),JSON.stringify(summary,null,2));
-for(let i=0;i<regressions.length;i++){assert.ok(reports[2].regressions[i].rows.every(q=>q.points===0),'held paired sampler must reproduce the reported failure');assert.ok(reports[1].regressions[i].rows.every(q=>q.points>0));assert.ok(reports[3].regressions[i].rows.every(q=>q.points>0),'reported regression must score at both translations');}
-assert.ok(summary.groups.every(g=>!g.newMissesVsIdeal.length),'do not introduce new misses versus ideal-policy reference in expanded neighborhood');
+for(let i=0;i<regressions.length;i++){assert.ok(reports[2].regressions[i].rows.every(q=>q.points===0),'held paired sampler must reproduce the reported failure');assert.ok(reports[1].regressions[i].rows.every(q=>q.points>0));assert.deepEqual(reports[3].regressions[i].rows.map(stableShot),reports[0].regressions[i].rows.map(stableShot),'Easy/Normal review cases must now match original main');}
+assert.ok(summary.groups.filter(g=>g.difficulty==='hard').every(g=>!g.newMissesVsIdeal.length),'Hard must not introduce new misses versus ideal-policy reference in expanded neighborhood');
 summary.passed=true;writeFileSync(resolve(out,'comparison.json'),JSON.stringify(summary,null,2));
-console.log(JSON.stringify({passed:true,regressionsRestored:8,maxCalls:summary.maxCalls},null,2));
+console.log(JSON.stringify({passed:true,originalMainReviewCaseParity:8,maxCalls:summary.maxCalls},null,2));

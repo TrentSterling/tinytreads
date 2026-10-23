@@ -1,5 +1,7 @@
 # Independent aim-error sampling correction
 
+**Historical all-difficulty candidate:** review passed the sampling correction in 0c80efa but held publication pending a Hard-only scope change. See [the Hard-only report](../cpu-hard-only/README.md) for current evidence and original-main Easy/Normal parity. Receipts below are unchanged.
+
 All four reviewer-reported failures now score **90 points at both translated positions**. Hard flat seed 4 remains a 47-point Single Shot. The new 1,344-shot neighborhood set introduces no hit-to-miss cases versus the first candidate, `bfe5167`, and the earlier 1,472-shot suite still passes. This is a new, unpushed candidate on `codex/cpu-independent-errors-20261023`, awaiting independent review.
 
 The withdrawn paired-sample candidate `0a3cc5ab441895110b0dedcd0b126322fd6510d2` and first candidate `bfe5167fe8c8a950a21ecc0612426daee5138224` remain unchanged on their original branches. Their historical receipts remain in `qa/cpu-noise/` and `qa/cpu-tactics/`. Original main and rollback remain `977b718513cdbd099093320e5e2bb170c9b2bb35`.

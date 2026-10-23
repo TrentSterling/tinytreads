@@ -1,0 +1,11 @@
+✔ original descriptions, credits, project links and structured data survive (0.7475ms)
+✔ approved shared source is pinned byte for byte (0.6334ms)
+✔ one collapsed host, local assets, early scoped input integration (0.5877ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 70.0829
