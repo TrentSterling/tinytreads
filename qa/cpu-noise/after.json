@@ -1,0 +1,5900 @@
+{
+  "source": "C:\\Users\\trent\\Documents\\Codex\\2026-10-23\\task\\tinytreads-candidate\\index.html",
+  "sourceSha256": "507b6dda16d1eb7955c25da3860893ace78f2de6de65aa051d45ab3294cc22d4",
+  "probes": [
+    {
+      "kind": "plain",
+      "seed": 1,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 42.65729490797967,
+        "power": 72.093581372872,
+        "error": 12.34603644082917
+      },
+      "cost": 0.8000001907348633,
+      "decisionRng": 2398689233,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 434,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 2,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 42.91123929135502,
+        "power": 72.62305069938301,
+        "error": 12.34603644082917
+      },
+      "cost": 2.299999952316284,
+      "decisionRng": 3819972634,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 435,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 3,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 42.955628980882466,
+        "power": 71.88303831033409,
+        "error": 12.34603644082917
+      },
+      "cost": 1.5999999046325684,
+      "decisionRng": 1833517003,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 436,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 4,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.222478582710025,
+        "power": 72.44610139876605,
+        "error": 12.34603644082917
+      },
+      "cost": 1,
+      "decisionRng": 3344977972,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 437,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 5,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 79.26685692127793,
+        "power": 83.65999220795929,
+        "error": 12.576551487442849
+      },
+      "cost": 2.3999998569488525,
+      "decisionRng": 1234782181,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 826,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 6,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.114572669938205,
+        "power": 71.43008958622814,
+        "error": 12.34603644082917
+      },
+      "cost": 0.7999999523162842,
+      "decisionRng": 617642030,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 439,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 7,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 79.17183009479194,
+        "power": 84.26351165734232,
+        "error": 12.576551487442849
+      },
+      "cost": 0.9000000953674316,
+      "decisionRng": 2854842367,
+      "points": 92,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 870,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 8,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.04651796706021,
+        "power": 71.27071633785962,
+        "error": 12.34603644082917
+      },
+      "cost": 0.7999999523162842,
+      "decisionRng": 189827724,
+      "points": 45,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 440,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 9,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.089738140441476,
+        "power": 72.03539098389447,
+        "error": 12.34603644082917
+      },
+      "cost": 0.9000000953674316,
+      "decisionRng": 2242485597,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 436,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 10,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.34212005063891,
+        "power": 72.65548425540328,
+        "error": 12.34603644082917
+      },
+      "cost": 0.7000000476837158,
+      "decisionRng": 3907035798,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 438,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 11,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.39745942112059,
+        "power": 71.83812763951718,
+        "error": 12.34603644082917
+      },
+      "cost": 0.7000000476837158,
+      "decisionRng": 1712960839,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 438,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "plain",
+      "seed": 12,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 78.83070919327437,
+        "power": 84.47619273364543,
+        "error": 12.576551487442849
+      },
+      "cost": 0.5999999046325684,
+      "decisionRng": 3425753784,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 832,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 1,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 42.65729490797967,
+        "power": 72.093581372872,
+        "error": 12.34603644082917
+      },
+      "cost": 1,
+      "decisionRng": 2398689233,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 434,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 2,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 42.91123929135502,
+        "power": 72.62305069938301,
+        "error": 12.34603644082917
+      },
+      "cost": 0.7000000476837158,
+      "decisionRng": 3819972634,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 435,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 3,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 42.955628980882466,
+        "power": 71.88303831033409,
+        "error": 12.34603644082917
+      },
+      "cost": 0.5999999046325684,
+      "decisionRng": 1833517003,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 436,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 4,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.222478582710025,
+        "power": 72.44610139876605,
+        "error": 12.34603644082917
+      },
+      "cost": 0.7999999523162842,
+      "decisionRng": 3344977972,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 437,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 5,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 79.26685692127793,
+        "power": 83.65999220795929,
+        "error": 12.576551487442849
+      },
+      "cost": 0.5,
+      "decisionRng": 1234782181,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 826,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 6,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.114572669938205,
+        "power": 71.43008958622814,
+        "error": 12.34603644082917
+      },
+      "cost": 0.5999999046325684,
+      "decisionRng": 617642030,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 439,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 7,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 79.17183009479194,
+        "power": 84.26351165734232,
+        "error": 12.576551487442849
+      },
+      "cost": 0.6000001430511475,
+      "decisionRng": 2854842367,
+      "points": 92,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 870,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 8,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.04651796706021,
+        "power": 71.27071633785962,
+        "error": 12.34603644082917
+      },
+      "cost": 0.7999999523162842,
+      "decisionRng": 189827724,
+      "points": 45,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 440,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 9,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.089738140441476,
+        "power": 72.03539098389447,
+        "error": 12.34603644082917
+      },
+      "cost": 0.6999998092651367,
+      "decisionRng": 2242485597,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 436,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 10,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.34212005063891,
+        "power": 72.65548425540328,
+        "error": 12.34603644082917
+      },
+      "cost": 0.7999999523162842,
+      "decisionRng": 3907035798,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 438,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 11,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 43.39745942112059,
+        "power": 71.83812763951718,
+        "error": 12.34603644082917
+      },
+      "cost": 0.6999998092651367,
+      "decisionRng": 1712960839,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 438,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "wall",
+      "seed": 12,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 78.83070919327437,
+        "power": 84.47619273364543,
+        "error": 12.576551487442849
+      },
+      "cost": 0.5999999046325684,
+      "decisionRng": 3425753784,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 832,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 1,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 22.65729490797967,
+        "power": 75.093581372872,
+        "error": 12.167054965524386
+      },
+      "cost": 0.5999999046325684,
+      "decisionRng": 2398689233,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 357,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 2,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 22.911239291355013,
+        "power": 75.62305069938301,
+        "error": 12.167054965524386
+      },
+      "cost": 0.6000001430511475,
+      "decisionRng": 3819972634,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 356,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 3,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 22.955628980882466,
+        "power": 74.88303831033409,
+        "error": 12.167054965524386
+      },
+      "cost": 0.6999998092651367,
+      "decisionRng": 1833517003,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 358,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 4,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 23.22247858271003,
+        "power": 75.44610139876605,
+        "error": 12.167054965524386
+      },
+      "cost": 0.7999999523162842,
+      "decisionRng": 3344977972,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 357,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 5,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 33.26685692127794,
+        "power": 47.65999220795929,
+        "error": 12.734230137035835
+      },
+      "cost": 0.8999998569488525,
+      "decisionRng": 1234782181,
+      "points": 92,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 401,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 6,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 23.114572669938205,
+        "power": 74.43008958622814,
+        "error": 12.167054965524386
+      },
+      "cost": 0.5999999046325684,
+      "decisionRng": 617642030,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 360,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 7,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 33.17183009479195,
+        "power": 48.26351165734231,
+        "error": 12.734230137035835
+      },
+      "cost": 0.5,
+      "decisionRng": 2854842367,
+      "points": 92,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 398,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 8,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 23.046517967060208,
+        "power": 74.27071633785962,
+        "error": 12.167054965524386
+      },
+      "cost": 0.5999999046325684,
+      "decisionRng": 189827724,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 360,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 9,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 23.089738140441476,
+        "power": 75.03539098389447,
+        "error": 12.167054965524386
+      },
+      "cost": 0.7999999523162842,
+      "decisionRng": 2242485597,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 358,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 10,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 23.342120050638915,
+        "power": 75.65548425540328,
+        "error": 12.167054965524386
+      },
+      "cost": 0.7999999523162842,
+      "decisionRng": 3907035798,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 357,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 11,
+      "name": "Single Shot",
+      "aim": {
+        "angle": 23.397459421120583,
+        "power": 74.83812763951718,
+        "error": 12.167054965524386
+      },
+      "cost": 1.0999999046325684,
+      "decisionRng": 1712960839,
+      "points": 47,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 359,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "lower",
+      "seed": 12,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 32.83070919327438,
+        "power": 48.47619273364544,
+        "error": 12.734230137035835
+      },
+      "cost": 0.40000009536743164,
+      "decisionRng": 3425753784,
+      "points": 92,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 397,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 1,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 81.65729490797966,
+        "power": 40.093581372871995,
+        "error": 80.61162182558458
+      },
+      "cost": 0.5,
+      "decisionRng": 2398689233,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 449,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 2,
+      "name": "Laser",
+      "aim": {
+        "angle": 0,
+        "power": 100,
+        "error": 14.0356688476182
+      },
+      "cost": 0.7000000476837158,
+      "decisionRng": 3819972634,
+      "points": 62,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 92,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 3,
+      "name": "Laser",
+      "aim": {
+        "angle": 0,
+        "power": 99.88303831033409,
+        "error": 14.0356688476182
+      },
+      "cost": 0.7000000476837158,
+      "decisionRng": 1833517003,
+      "points": 62,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 92,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 4,
+      "name": "Laser",
+      "aim": {
+        "angle": 0.22247858271002774,
+        "power": 100,
+        "error": 14.0356688476182
+      },
+      "cost": 0.5,
+      "decisionRng": 3344977972,
+      "points": 62,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 92,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 5,
+      "name": "Laser",
+      "aim": {
+        "angle": 0.26685692127794025,
+        "power": 99.65999220795929,
+        "error": 14.0356688476182
+      },
+      "cost": 0.6999998092651367,
+      "decisionRng": 1234782181,
+      "points": 62,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 92,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 6,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 82.11457266993821,
+        "power": 39.430089586228135,
+        "error": 80.61162182558458
+      },
+      "cost": 0.6000001430511475,
+      "decisionRng": 617642030,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 444,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 7,
+      "name": "Laser",
+      "aim": {
+        "angle": 0.17183009479194877,
+        "power": 100,
+        "error": 14.0356688476182
+      },
+      "cost": 0.5,
+      "decisionRng": 2854842367,
+      "points": 62,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 92,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 8,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 82.04651796706021,
+        "power": 39.27071633785963,
+        "error": 80.61162182558458
+      },
+      "cost": 0.6999998092651367,
+      "decisionRng": 189827724,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 442,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 9,
+      "name": "Laser",
+      "aim": {
+        "angle": 0.08973814044147732,
+        "power": 100,
+        "error": 14.0356688476182
+      },
+      "cost": 0.6999998092651367,
+      "decisionRng": 2242485597,
+      "points": 62,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 92,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 10,
+      "name": "Sniper Rifle",
+      "aim": {
+        "angle": 82.34212005063891,
+        "power": 40.65548425540328,
+        "error": 80.61162182558458
+      },
+      "cost": 0.40000009536743164,
+      "decisionRng": 3907035798,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 454,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 11,
+      "name": "Laser",
+      "aim": {
+        "angle": 0.3974594211205841,
+        "power": 99.83812763951718,
+        "error": 14.0356688476182
+      },
+      "cost": 0.7000000476837158,
+      "decisionRng": 1712960839,
+      "points": 62,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 92,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "close",
+      "seed": 12,
+      "name": "Laser",
+      "aim": {
+        "angle": 0,
+        "power": 100,
+        "error": 14.0356688476182
+      },
+      "cost": 0.7000000476837158,
+      "decisionRng": 3425753784,
+      "points": 62,
+      "selfHits": 0,
+      "terrainChanged": false,
+      "buriedBefore": false,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 92,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 1,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.61259794253856,
+        "power": 70.18624656386673,
+        "error": 0
+      },
+      "cost": 3.3999998569488525,
+      "decisionRng": 2647435461,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 2,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.625006676092745,
+        "power": 69.459981585294,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 697882754,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 3,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.637604237161575,
+        "power": 70.32706148885191,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 3025432647,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 4,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.65001335218549,
+        "power": 69.71996317058802,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 1395765508,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 5,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.662611294724044,
+        "power": 70.4936792138964,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 3472693697,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 6,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.675019265338776,
+        "power": 69.96663604006172,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 2057922950,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 7,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.68761682640761,
+        "power": 70.64623425118626,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 3882205507,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 8,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.70002670437098,
+        "power": 70.23992635346949,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 2791531049,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 9,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.71262464690953,
+        "power": 69.57304181307555,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 1001376492,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 10,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.72503338046372,
+        "power": 70.09989573173225,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 2415639211,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 11,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.73763094153255,
+        "power": 69.31384453102946,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 305599086,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    },
+    {
+      "kind": "buried",
+      "seed": 12,
+      "name": "Well Digger",
+      "aim": {
+        "angle": 62.75003853067756,
+        "power": 70.73327209241688,
+        "error": 0
+      },
+      "cost": 0,
+      "decisionRng": 4115845933,
+      "points": 0,
+      "selfHits": 0,
+      "terrainChanged": true,
+      "buriedBefore": true,
+      "buriedAfter": false,
+      "turn": 1,
+      "steps": 88,
+      "safetyTimeouts": 0
+    }
+  ],
+  "matches": [
+    {
+      "seed": 41,
+      "difficulty": "easy",
+      "count": 2,
+      "shots": [
+        {
+          "seed": 41,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 45.527815743535754,
+            "power": 76.72929911734536,
+            "error": 12.023510034710391
+          },
+          "cost": 3.1999998092651367,
+          "decisionRng": 2371220495,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 1,
+          "steps": 486,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 118.63373555168509,
+            "power": 64.32513204030693,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 406528484,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 2,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 58.56264996305108,
+            "power": 70.44807705609128,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2284946241,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 3,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 131.63675803914666,
+            "power": 74.39911027159542,
+            "error": 14.53925635993359
+          },
+          "cost": 4.6000001430511475,
+          "decisionRng": 2883490802,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 4,
+          "steps": 589,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 44.199738807976246,
+            "power": 71.00513241719455,
+            "error": 14.545489986498401
+          },
+          "cost": 1.5999999046325684,
+          "decisionRng": 1842274810,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 5,
+          "steps": 548,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 180,
+            "power": 100,
+            "error": 14.008964255250332
+          },
+          "cost": 2,
+          "decisionRng": 3173118865,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 6,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 3.9801961675286295,
+            "power": 94.88729904219508,
+            "error": 12.720019013774914
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 578991976,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 7,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 150.1567546926439,
+            "power": 47.638688772916794,
+            "error": 12.001890048550118
+          },
+          "cost": 0.5,
+          "decisionRng": 809505856,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 8,
+          "steps": 288,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 56.811539352685216,
+            "power": 51.600916563067585,
+            "error": 14.439355445473803
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 2025051483,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 9,
+          "steps": 470,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 132.6450249068439,
+            "power": 73.13034597225487,
+            "error": 16.237852108510918
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 2494255004,
+          "points": 47,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 10,
+          "steps": 463,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 61.78980525359511,
+            "power": 75.70982448151335,
+            "error": 14.456547330794866
+          },
+          "cost": 1.1000001430511475,
+          "decisionRng": 831329109,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 11,
+          "steps": 542,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Worm",
+          "aim": {
+            "angle": 137.6469395942986,
+            "power": 65.26330286031589,
+            "error": 1.1599811066353563
+          },
+          "cost": 4.3999998569488525,
+          "decisionRng": 80776941,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 12,
+          "steps": 456,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser",
+          "aim": {
+            "angle": 0.6380004398524761,
+            "power": 99.4751574746333,
+            "error": 775.5799889927796
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 1986470685,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 13,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 150.41068186312913,
+            "power": 100,
+            "error": 11.014587963435286
+          },
+          "cost": 0.5,
+          "decisionRng": 3666824098,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 14,
+          "steps": 404,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Worm",
+          "aim": {
+            "angle": 34.53206375688315,
+            "power": 73.36257694661617,
+            "error": 1.08612168440799
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 1645149472,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 15,
+          "steps": 403,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 114.55768533349037,
+            "power": 87.13598495954648,
+            "error": 17.136184477998544
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 4029901843,
+          "points": 15,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 16,
+          "steps": 626,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 60.777978183329104,
+            "power": 84.9601788171567,
+            "error": 17.079714844238023
+          },
+          "cost": 0.9000000953674316,
+          "decisionRng": 2135267171,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 17,
+          "steps": 580,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser",
+          "aim": {
+            "angle": 180,
+            "power": 95.59187225671485,
+            "error": 742.7863344001344
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 795143327,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 18,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 59.475567132979634,
+            "power": 68.52811869233847,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 1695934928,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 19,
+          "steps": 143,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 114.79169836342335,
+            "power": 74.76153019815683,
+            "error": 0
+          },
+          "cost": 0.19999980926513672,
+          "decisionRng": 3608241968,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 20,
+          "steps": 182,
+          "safetyTimeouts": 0
+        }
+      ],
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "local",
+        "currentPlayer": 1,
+        "turnCount": 20,
+        "locked": false,
+        "shotAge": 1.5166666666666637,
+        "weapon": "Jump Jets",
+        "projectiles": 0,
+        "particles": 4,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 229.892449262092,
+            "y": 446.3265663920011,
+            "angle": 59.475567132979634,
+            "power": 68.52811869233847,
+            "score": 116,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 950.7400350495654,
+            "y": 448.078125,
+            "angle": 114.79169836342335,
+            "power": 74.76153019815683,
+            "score": 210,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 167,
+          "shots": 20,
+          "safetyTimeouts": 0
+        },
+        "seed": 41,
+        "terrainRevision": 2012
+      }
+    },
+    {
+      "seed": 42,
+      "difficulty": "easy",
+      "count": 2,
+      "shots": [
+        {
+          "seed": 42,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 46.604218158125875,
+            "power": 69.69855355937034,
+            "error": 12.34603644082917
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 1441438134,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 1,
+          "steps": 452,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 131.84777098074557,
+            "power": 76.73443731619045,
+            "error": 12.023510034710615
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 2372796809,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 2,
+          "steps": 503,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 38.49377892911434,
+            "power": 69.48497784882784,
+            "error": 12.084067993981666
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 1375916656,
+          "points": 18,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 3,
+          "steps": 545,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser",
+          "aim": {
+            "angle": 176.1834234237671,
+            "power": 98.75139127112925,
+            "error": 14.490639959669291
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 1764431244,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 4,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 37.18408550098538,
+            "power": 88.2136355470866,
+            "error": 12.646877136140091
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 3440156996,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 5,
+          "steps": 447,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 120.59463178664446,
+            "power": 65.10734031815082,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 646496982,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 6,
+          "steps": 186,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 40.12276506870985,
+            "power": 72.80978316767141,
+            "error": 17.94884343258674
+          },
+          "cost": 0.5,
+          "decisionRng": 3623045177,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 7,
+          "steps": 431,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 180,
+            "power": 99.47265990125015,
+            "error": 9.001761183380818
+          },
+          "cost": 1.3999998569488525,
+          "decisionRng": 1985704471,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 8,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Worm",
+          "aim": {
+            "angle": 68.8455901056528,
+            "power": 85.014365285635,
+            "error": 1.942797507284174
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 1231540544,
+          "points": 59,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 9,
+          "steps": 635,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 128.93169846013188,
+            "power": 66.4875999102369,
+            "error": 15.35798862006496
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 456370926,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 10,
+          "steps": 450,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser",
+          "aim": {
+            "angle": 0,
+            "power": 100,
+            "error": 40.59661576920166
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2759786563,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 11,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 126.37828060612082,
+            "power": 76.53173980209976,
+            "error": 15.35798862006496
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 3537746094,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 12,
+          "steps": 510,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 0,
+            "power": 100,
+            "error": 40.59661576920166
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 3090307653,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 13,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Worm",
+          "aim": {
+            "angle": 103.62814473807812,
+            "power": 97.15394477033988,
+            "error": 0.4389321172065377
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 2501494723,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 14,
+          "steps": 863,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 48.65280381143093,
+            "power": 43.34572952752933,
+            "error": 15.83309770895667
+          },
+          "cost": 0.5,
+          "decisionRng": 719630829,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 15,
+          "steps": 382,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 124.02040698304772,
+            "power": 67.25157564226538,
+            "error": 15.35798862006496
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 690745982,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 16,
+          "steps": 607,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 64.23880310207605,
+            "power": 63.54282567696646,
+            "error": 0
+          },
+          "cost": 0,
+          "decisionRng": 166529895,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 17,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 144.3280006110668,
+            "power": 53.323066513985395,
+            "error": 14.960646678140023
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 3780511976,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 18,
+          "steps": 360,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 60.88105249330401,
+            "power": 75.64257232146338,
+            "error": 0
+          },
+          "cost": 0.19999980926513672,
+          "decisionRng": 3878531047,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 19,
+          "steps": 202,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 113.16218564361334,
+            "power": 65.25457141082734,
+            "error": 0
+          },
+          "cost": 0,
+          "decisionRng": 691665034,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 20,
+          "steps": 88,
+          "safetyTimeouts": 0
+        }
+      ],
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "local",
+        "currentPlayer": 1,
+        "turnCount": 20,
+        "locked": false,
+        "shotAge": 0.7333333333333332,
+        "weapon": "Well Digger",
+        "projectiles": 0,
+        "particles": 11,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 245.3312177497879,
+            "y": 478.10885741598133,
+            "angle": 60.88105249330401,
+            "power": 75.64257232146338,
+            "score": 135,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 940.0503361557436,
+            "y": 498.0395833333333,
+            "angle": 113.16218564361334,
+            "power": 65.25457141082734,
+            "score": 148,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 155,
+          "shots": 20,
+          "safetyTimeouts": 0
+        },
+        "seed": 42,
+        "terrainRevision": 2596
+      }
+    },
+    {
+      "seed": 41,
+      "difficulty": "normal",
+      "count": 2,
+      "shots": [
+        {
+          "seed": 41,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 44.50927191451192,
+            "power": 76.29171964693815,
+            "error": 12.023510034710391
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 2371220495,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 1,
+          "steps": 477,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 117.54457851722836,
+            "power": 67.73005281612276,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 406528484,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 2,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 61.520883321017024,
+            "power": 70.17923082243651,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2284946241,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 3,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 134.54558601304888,
+            "power": 72.95964410863817,
+            "error": 14.53925635993359
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 2883490802,
+          "points": 36,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 4,
+          "steps": 554,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 1.3226875491440295,
+            "power": 99.10694240629672,
+            "error": 13.832051660285478
+          },
+          "cost": 1.5,
+          "decisionRng": 1462545584,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 5,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Worm",
+          "aim": {
+            "angle": 134.8348693795502,
+            "power": 72.86633325014263,
+            "error": 0.6529542390901508
+          },
+          "cost": 0.5,
+          "decisionRng": 2811925251,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 6,
+          "steps": 449,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Worm",
+          "aim": {
+            "angle": 70.28894455134869,
+            "power": 92.35947891119868,
+            "error": 0.7085056691236763
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 2423189035,
+          "points": 59,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 7,
+          "steps": 670,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 134.811483515054,
+            "power": 73.10720885563642,
+            "error": 16.260407145570483
+          },
+          "cost": 0.8000001907348633,
+          "decisionRng": 2996666831,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 8,
+          "steps": 450,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 62.14615622088313,
+            "power": 83.65149399954825,
+            "error": 17.645808169819766
+          },
+          "cost": 1.2000000476837158,
+          "decisionRng": 3414110919,
+          "points": 22,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 9,
+          "steps": 580,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 107.44773905575275,
+            "power": 94.15724431313575,
+            "error": 14.147497569523026
+          },
+          "cost": 0.9000000953674316,
+          "decisionRng": 2268083502,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 10,
+          "steps": 687,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 62.12428554594517,
+            "power": 84.20445459652692,
+            "error": 18.00061543797114
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 3838208719,
+          "points": 12,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 11,
+          "steps": 589,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 107.53067224770784,
+            "power": 69.61933303810656,
+            "error": 15.277737521838537
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 3389444798,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 12,
+          "steps": 679,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 69.46909942924977,
+            "power": 64.71042235214263,
+            "error": 12.868796340955035
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 2692348071,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 13,
+          "steps": 638,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 180,
+            "power": 98.83241079617292,
+            "error": 32.70245657786736
+          },
+          "cost": 0.2999999523162842,
+          "decisionRng": 1251991247,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 14,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser",
+          "aim": {
+            "angle": 0,
+            "power": 100,
+            "error": 727.5412224707403
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2843655028,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 15,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser",
+          "aim": {
+            "angle": 180,
+            "power": 100,
+            "error": 32.70245657786736
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 3137910525,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 16,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 55.38855235502124,
+            "power": 78.65655012130738,
+            "error": 12.7899769650845
+          },
+          "cost": 0.8000001907348633,
+          "decisionRng": 4184947200,
+          "points": 9,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 17,
+          "steps": 672,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 114.51268857941031,
+            "power": 100,
+            "error": 14.118362877055791
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 3492430553,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 18,
+          "steps": 705,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 63.829374180734156,
+            "power": 72.42723177559674,
+            "error": 0
+          },
+          "cost": 0.19999980926513672,
+          "decisionRng": 4009069558,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 19,
+          "steps": 183,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 116.9750009790063,
+            "power": 70.9224418193102,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2854958192,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 20,
+          "steps": 172,
+          "safetyTimeouts": 0
+        }
+      ],
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "local",
+        "currentPlayer": 1,
+        "turnCount": 20,
+        "locked": false,
+        "shotAge": 1.4333333333333307,
+        "weapon": "Jump Jets",
+        "projectiles": 0,
+        "particles": 6,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 236.00198794801437,
+            "y": 475,
+            "angle": 63.829374180734156,
+            "power": 72.42723177559674,
+            "score": 160,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 951.1245142925565,
+            "y": 444,
+            "angle": 116.9750009790063,
+            "power": 70.9224418193102,
+            "score": 183,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 144,
+          "shots": 20,
+          "safetyTimeouts": 0
+        },
+        "seed": 41,
+        "terrainRevision": 3008
+      }
+    },
+    {
+      "seed": 42,
+      "difficulty": "normal",
+      "count": 2,
+      "shots": [
+        {
+          "seed": 42,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 44.20140605270863,
+            "power": 71.07942142374813,
+            "error": 12.34603644082917
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 1441438134,
+          "points": 40,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 1,
+          "steps": 446,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 132.6159236602485,
+            "power": 80.29377492647617,
+            "error": 12.122672918184609
+          },
+          "cost": 0.5,
+          "decisionRng": 2372796809,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 2,
+          "steps": 508,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 61.49792630970478,
+            "power": 80.99399113953113,
+            "error": 16.24011900006982
+          },
+          "cost": 1,
+          "decisionRng": 1375916656,
+          "points": 45,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 3,
+          "steps": 691,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 179.16407930300136,
+            "power": 99.80673579275609,
+            "error": 9.052708048479458
+          },
+          "cost": 1.4000000953674316,
+          "decisionRng": 1999258032,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 4,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 38.73607080355286,
+            "power": 94.67915193252266,
+            "error": 6.126508726808077
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 4202281850,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 5,
+          "steps": 464,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 118.57838457301258,
+            "power": 81.33548778351397,
+            "error": 16.236312665823586
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 2404788837,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 6,
+          "steps": 569,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 70.62521190345288,
+            "power": 67.08004745673388,
+            "error": 14.91778664328216
+          },
+          "cost": 1,
+          "decisionRng": 2208876721,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 7,
+          "steps": 651,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 139.68873071074486,
+            "power": 69.27277964446694,
+            "error": 14.750595645109675
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 55818963,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 8,
+          "steps": 542,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 0,
+            "power": 100,
+            "error": 9.015847948144604
+          },
+          "cost": 1.2000000476837158,
+          "decisionRng": 2647069405,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 9,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Worm",
+          "aim": {
+            "angle": 139.59398934841155,
+            "power": 69.3806606091559,
+            "error": 0.37473049745797254
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 138559180,
+          "points": 14,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 10,
+          "steps": 442,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 25.74517317339778,
+            "power": 80.13189856242388,
+            "error": 13.51183618186745
+          },
+          "cost": 0.8999998569488525,
+          "decisionRng": 714727473,
+          "points": 27,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 11,
+          "steps": 354,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 141.84539332091808,
+            "power": 78.74699443597346,
+            "error": 14.775884240250852
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 4254314231,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 12,
+          "steps": 416,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser",
+          "aim": {
+            "angle": 0,
+            "power": 97.29444131217898,
+            "error": 51.84700418170888
+          },
+          "cost": 0.40000009536743164,
+          "decisionRng": 72432562,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 13,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser",
+          "aim": {
+            "angle": 179.28619801748445,
+            "power": 99.93750583324581,
+            "error": 758.8258423716284
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2099553219,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 14,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Worm",
+          "aim": {
+            "angle": 49.86249786689878,
+            "power": 71.80013077650219,
+            "error": 1.421794396969117
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 1994192259,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 15,
+          "steps": 631,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 104.59266551509499,
+            "power": 75.02998259011656,
+            "error": 15.33212870668833
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 1403520603,
+          "points": 92,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 16,
+          "steps": 839,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 63.36437548920512,
+            "power": 69.1069480324164,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 1462549899,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 17,
+          "steps": 183,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 116.91882333233953,
+            "power": 69.833038732782,
+            "error": 0
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 2019431294,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 18,
+          "steps": 184,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 62.91624733656645,
+            "power": 68.51995352115482,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 1012349501,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 19,
+          "steps": 87,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 117.79213580265642,
+            "power": 68.80340484138578,
+            "error": 0
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 1229744885,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 20,
+          "steps": 88,
+          "safetyTimeouts": 0
+        }
+      ],
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "local",
+        "currentPlayer": 1,
+        "turnCount": 20,
+        "locked": false,
+        "shotAge": 0.7333333333333332,
+        "weapon": "Well Digger",
+        "projectiles": 0,
+        "particles": 13,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 200.73275222421918,
+            "y": 494.0434295975925,
+            "angle": 62.91624733656645,
+            "power": 68.51995352115482,
+            "score": 260,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 975.7619062696064,
+            "y": 522.6624743279091,
+            "angle": 117.79213580265642,
+            "power": 68.80340484138578,
+            "score": 195,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 134,
+          "shots": 20,
+          "safetyTimeouts": 0
+        },
+        "seed": 42,
+        "terrainRevision": 3666
+      }
+    },
+    {
+      "seed": 41,
+      "difficulty": "hard",
+      "count": 2,
+      "shots": [
+        {
+          "seed": 41,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 44.12731797862798,
+            "power": 76.08334847055376,
+            "error": 12.023510034710391
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 2371220495,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 1,
+          "steps": 473,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 117.1361446293071,
+            "power": 69.35144366174936,
+            "error": 0
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 406528484,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 2,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 62.63022083025426,
+            "power": 70.05120880641043,
+            "error": 0
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 2284946241,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 3,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 135.63639650326223,
+            "power": 72.27418403103948,
+            "error": 14.53925635993359
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 2883490802,
+          "points": 36,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 4,
+          "steps": 571,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 72.60045843198895,
+            "power": 68.08319170102477,
+            "error": 14.347871352741537
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 2370799670,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 5,
+          "steps": 671,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 107.28289953935891,
+            "power": 68.66991881690919,
+            "error": 14.90977122734851
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 3945783279,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 6,
+          "steps": 678,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 38.72343874219805,
+            "power": 72.38097284324468,
+            "error": 14.809901342310539
+          },
+          "cost": 1.2999999523162842,
+          "decisionRng": 3170149837,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 7,
+          "steps": 412,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 109.90164935868233,
+            "power": 97.63674913197755,
+            "error": 14.469595721367762
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 3856744084,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 8,
+          "steps": 735,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Worm",
+          "aim": {
+            "angle": 58.28842006977648,
+            "power": 75.62382724955678,
+            "error": 0.7684000577501389
+          },
+          "cost": 0.5,
+          "decisionRng": 1137702610,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 9,
+          "steps": 702,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 178.56027603611832,
+            "power": 99.39409233592451,
+            "error": 9.018340049428963
+          },
+          "cost": 1.3000001907348633,
+          "decisionRng": 521012647,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 10,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 36.74474759064615,
+            "power": 71.50314936377109,
+            "error": 15.611089097698125
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 813760377,
+          "points": 47,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 11,
+          "steps": 411,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 145.89923205003143,
+            "power": 76.59086037948728,
+            "error": 14.726765676541048
+          },
+          "cost": 1.0999999046325684,
+          "decisionRng": 3733562402,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 12,
+          "steps": 383,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 30.7205000737682,
+            "power": 76.86276836730539,
+            "error": 17.56934086182274
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 1779105289,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 13,
+          "steps": 458,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 124.98420980069787,
+            "power": 76.32723360210657,
+            "error": 16.459265980894255
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 3025894660,
+          "points": 47,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 14,
+          "steps": 516,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 0,
+            "power": 99.65292132943868,
+            "error": 15.028041615988876
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 1215801436,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 15,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser",
+          "aim": {
+            "angle": 180,
+            "power": 100,
+            "error": 14.00012210985393
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2623905826,
+          "points": 62,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 16,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 62.829324551671746,
+            "power": 69.57556991390884,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 1008162811,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 17,
+          "steps": 188,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Worm",
+          "aim": {
+            "angle": 105.87133436407893,
+            "power": 99.41430723741651,
+            "error": 1.380167190482278
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 575276610,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 18,
+          "steps": 813,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Laser",
+          "aim": {
+            "angle": 0,
+            "power": 100,
+            "error": 16.184899872383518
+          },
+          "cost": 0.2999999523162842,
+          "decisionRng": 2699118349,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 19,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 41,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 117.31619642861187,
+            "power": 70.24950362071395,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 2817239830,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 20,
+          "steps": 187,
+          "safetyTimeouts": 0
+        }
+      ],
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "local",
+        "currentPlayer": 1,
+        "turnCount": 20,
+        "locked": false,
+        "shotAge": 1.5583333333333302,
+        "weapon": "Jump Jets",
+        "projectiles": 0,
+        "particles": 0,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 225.5909723566389,
+            "y": 495.8357284312822,
+            "angle": 0,
+            "power": 100,
+            "score": 226,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 959.5699197626608,
+            "y": 493.0837015344503,
+            "angle": 117.31619642861187,
+            "power": 70.24950362071395,
+            "score": 324,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 132,
+          "shots": 20,
+          "safetyTimeouts": 0
+        },
+        "seed": 41,
+        "terrainRevision": 4625
+      }
+    },
+    {
+      "seed": 42,
+      "difficulty": "hard",
+      "count": 2,
+      "shots": [
+        {
+          "seed": 42,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 43.27950152158737,
+            "power": 72.60070302635431,
+            "error": 12.34603644082917
+          },
+          "cost": 1.2999999523162842,
+          "decisionRng": 3759983556,
+          "points": 47,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 1,
+          "steps": 437,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 137.1712076669559,
+            "power": 71.30796183012426,
+            "error": 12.75096252238375
+          },
+          "cost": 1.1999998092651367,
+          "decisionRng": 289807831,
+          "points": 44,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 2,
+          "steps": 439,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Worm",
+          "aim": {
+            "angle": 61.13504254836589,
+            "power": 80.23790708854794,
+            "error": 0.274453400227269
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 2786110626,
+          "points": 59,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 3,
+          "steps": 562,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 125.30935930442065,
+            "power": 76.30424388833345,
+            "error": 14.318285110295252
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 2964182117,
+          "points": 25,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 4,
+          "steps": 523,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 2.411893723921495,
+            "power": 99.90437100566923,
+            "error": 9.045033913666767
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 1890781521,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 5,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 180,
+            "power": 100,
+            "error": 48.07304311401358
+          },
+          "cost": 0.39999985694885254,
+          "decisionRng": 2151482000,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 6,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 62.767558289691806,
+            "power": 83.46419123746455,
+            "error": 13.730992604944303
+          },
+          "cost": 0.5,
+          "decisionRng": 3393537513,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 7,
+          "steps": 580,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 131.19488929770887,
+            "power": 72.07713119238615,
+            "error": 16.16040922528673
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 2354531116,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 8,
+          "steps": 473,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 60.85232207570225,
+            "power": 79.83463183529675,
+            "error": 15.532808807716188
+          },
+          "cost": 0.6999998092651367,
+          "decisionRng": 1703576861,
+          "points": 27,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 9,
+          "steps": 661,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser",
+          "aim": {
+            "angle": 179.97535574715585,
+            "power": 99.68188361264765,
+            "error": 782.7817210828133
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 1293546473,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 10,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 65.63034924585372,
+            "power": 97.49067923687399,
+            "error": 13.084805391812612
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 780286135,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 11,
+          "steps": 698,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 112.93533210996539,
+            "power": 59.898364106565715,
+            "error": 14.038015318847753
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 1874656874,
+          "points": 92,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 12,
+          "steps": 634,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 44.894944708049294,
+            "power": 52.51815000958741,
+            "error": 15.726306999757591
+          },
+          "cost": 0.6999998092651367,
+          "decisionRng": 3538381989,
+          "points": 92,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 13,
+          "steps": 436,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 158.0948119286448,
+            "power": 86.91438743360341,
+            "error": 12.098870489516363
+          },
+          "cost": 0.5,
+          "decisionRng": 1917669165,
+          "points": 72,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 14,
+          "steps": 451,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Laser",
+          "aim": {
+            "angle": 1.4621270676423914,
+            "power": 100,
+            "error": 806.6385161675269
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 3268041421,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 15,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Worm",
+          "aim": {
+            "angle": 121.97144725378602,
+            "power": 80.63712988682092,
+            "error": 0.5139006380744393
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 3857766165,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 16,
+          "steps": 562,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 62.83739082328975,
+            "power": 70.6830310922116,
+            "error": 0
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 3980981275,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 17,
+          "steps": 87,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 117.03641502074898,
+            "power": 69.83634399175644,
+            "error": 0
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 1708172896,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 18,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 62.745880796015264,
+            "power": 69.31605895720422,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 311543391,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 19,
+          "steps": 206,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 42,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 117.19056266974658,
+            "power": 70.67770767472685,
+            "error": 0
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 3966691335,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 20,
+          "steps": 172,
+          "safetyTimeouts": 0
+        }
+      ],
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "local",
+        "currentPlayer": 1,
+        "turnCount": 20,
+        "locked": false,
+        "shotAge": 1.4333333333333307,
+        "weapon": "Jump Jets",
+        "projectiles": 0,
+        "particles": 0,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 207.9119380533496,
+            "y": 491.108770320123,
+            "angle": 62.745880796015264,
+            "power": 69.31605895720422,
+            "score": 404,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 993.9401982150248,
+            "y": 462.356090162721,
+            "angle": 117.19056266974658,
+            "power": 70.67770767472685,
+            "score": 349,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 143,
+          "shots": 20,
+          "safetyTimeouts": 0
+        },
+        "seed": 42,
+        "terrainRevision": 4918
+      }
+    },
+    {
+      "seed": 51,
+      "difficulty": "normal",
+      "count": 4,
+      "shots": [
+        {
+          "seed": 51,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 18.484473263472317,
+            "power": 51.451517862826584,
+            "error": 12.204729817448664
+          },
+          "cost": 1.7000000476837158,
+          "decisionRng": 3260737532,
+          "points": 47,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 1,
+          "steps": 234,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Laser",
+          "aim": {
+            "angle": 0.746906539797783,
+            "power": 98.64419319611042,
+            "error": 12.012605009927265
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 1107636169,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 2,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Worm",
+          "aim": {
+            "angle": 117.58832223787904,
+            "power": 49.718552337028086,
+            "error": 1.4714008377105743
+          },
+          "cost": 1.2000000476837158,
+          "decisionRng": 4232500323,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 3,
+          "steps": 516,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 145.3881485916674,
+            "power": 41.03825315907598,
+            "error": 12.51116066196085
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 642905340,
+          "points": 54,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 4,
+          "steps": 391,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 33.20832748636603,
+            "power": 44.44810849912464,
+            "error": 14.956164669326558
+          },
+          "cost": 1.7000000476837158,
+          "decisionRng": 2491164246,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 5,
+          "steps": 278,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 47.85064643472433,
+            "power": 46.597582725808024,
+            "error": 13.641286940185493
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 4139721658,
+          "points": 18,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 6,
+          "steps": 452,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 73.87263914793729,
+            "power": 75.73571654781699,
+            "error": 12.020348017627546
+          },
+          "cost": 0.8999998569488525,
+          "decisionRng": 2711747668,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 7,
+          "steps": 555,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 156.7737839527428,
+            "power": 45.08006211593747,
+            "error": 12.178020037667213
+          },
+          "cost": 1.4000000953674316,
+          "decisionRng": 2208887964,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 8,
+          "steps": 247,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Worm",
+          "aim": {
+            "angle": 19.523611488938332,
+            "power": 44.10908408947289,
+            "error": 0.4307228189971818
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 1464188166,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 9,
+          "steps": 404,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 63.472539593279365,
+            "power": 48.965942814573644,
+            "error": 15.84743230959751
+          },
+          "cost": 1.5,
+          "decisionRng": 2121363202,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 10,
+          "steps": 408,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 52.63370640948415,
+            "power": 44.514527247473595,
+            "error": 16.253114633241054
+          },
+          "cost": 0.9000000953674316,
+          "decisionRng": 2542104666,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 11,
+          "steps": 327,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 124.51001696512103,
+            "power": 41.71953822635114,
+            "error": 14.727372484007518
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 1932381122,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 12,
+          "steps": 363,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 0,
+            "power": 99.7915265724063,
+            "error": 31.751861520711362
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 1987593192,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 13,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 64.41929286569356,
+            "power": 49.003994518332185,
+            "error": 15.182438359931407
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 3684464169,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 14,
+          "steps": 422,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 50.57372245118022,
+            "power": 44.96744440607726,
+            "error": 16.760273010848664
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 2889473306,
+          "points": 47,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 15,
+          "steps": 329,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 180,
+            "power": 100,
+            "error": 43.315570222678524
+          },
+          "cost": 1.0999999046325684,
+          "decisionRng": 3540797681,
+          "points": 180,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 16,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 65.5545250080526,
+            "power": 53.49475118592382,
+            "error": 14.2839399287002
+          },
+          "cost": 0.6999998092651367,
+          "decisionRng": 4060854140,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 17,
+          "steps": 454,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 147.48768386915327,
+            "power": 42.24888507127762,
+            "error": 13.226300593208105
+          },
+          "cost": 0.5,
+          "decisionRng": 804451264,
+          "points": 36,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 18,
+          "steps": 282,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 50.44673891738057,
+            "power": 46.64514327514917,
+            "error": 16.072229792965132
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 4176198623,
+          "points": 36,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 19,
+          "steps": 471,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 99.30566591918469,
+            "power": 56.12719913329929,
+            "error": 15.774007641486648
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 3778956989,
+          "points": 92,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 20,
+          "steps": 616,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 77.99828415587544,
+            "power": 48.64831597525627,
+            "error": 16.379265692100816
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 1877756615,
+          "points": 92,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 21,
+          "steps": 543,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 0,
+            "power": 98.50674756448716,
+            "error": 51.00071401140004
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 1002221081,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 22,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 174.1000771395691,
+            "power": 98.90692017711699,
+            "error": 8.941457508868556
+          },
+          "cost": 0.2999999523162842,
+          "decisionRng": 1309136846,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 23,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 133.66808966100217,
+            "power": 45.13195570353419,
+            "error": 9.755428766226522
+          },
+          "cost": 0.6000001430511475,
+          "decisionRng": 3015646635,
+          "points": 40,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 24,
+          "steps": 353,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 29.588182795792818,
+            "power": 44.91791604273021,
+            "error": 12.001574124424495
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 1317570218,
+          "points": 45,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 25,
+          "steps": 387,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Worm",
+          "aim": {
+            "angle": 64.19785374253988,
+            "power": 45.95783734880388,
+            "error": 0.1987083462440569
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 3649063538,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 26,
+          "steps": 549,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 102.59424090534449,
+            "power": 45.93543339315802,
+            "error": 13.438996614096512
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 3631880635,
+          "points": 92,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 27,
+          "steps": 525,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 117.70046407356858,
+            "power": 70.29050765037536,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 2370290944,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 28,
+          "steps": 189,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Laser",
+          "aim": {
+            "angle": 1.3316625595092773,
+            "power": 99.86671522483229,
+            "error": 25.194220113337686
+          },
+          "cost": 0.2999999523162842,
+          "decisionRng": 2045259764,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 29,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 100.67191714271902,
+            "power": 50.52114574983716,
+            "error": 16.80807777326389
+          },
+          "cost": 0.5,
+          "decisionRng": 3314139228,
+          "points": 92,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 30,
+          "steps": 569,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 61.71659603789449,
+            "power": 71.47491879165173,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 3278685072,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 31,
+          "steps": 192,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Laser",
+          "aim": {
+            "angle": 180,
+            "power": 97.9119497217238,
+            "error": 43.51626525923932
+          },
+          "cost": 0.2999999523162842,
+          "decisionRng": 546035852,
+          "points": 124,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 32,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 64.39881088361145,
+            "power": 69.68946087192744,
+            "error": 0
+          },
+          "cost": 0.19999980926513672,
+          "decisionRng": 1909313041,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 33,
+          "steps": 189,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 116.36277666017413,
+            "power": 72.47298487238587,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 4044160282,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 34,
+          "steps": 183,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Laser",
+          "aim": {
+            "angle": 6.209855146649184,
+            "power": 100,
+            "error": 190.4310559210362
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 3268624151,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 35,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Worm",
+          "aim": {
+            "angle": 107.09650472551584,
+            "power": 47.45661219414323,
+            "error": 0.7992242522686728
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 1730727781,
+          "points": 59,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 36,
+          "steps": 436,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 62.67982874214649,
+            "power": 69.4036733886227,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 1690125917,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 37,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 117.5282254755497,
+            "power": 70.5458588367328,
+            "error": 0
+          },
+          "cost": 0.19999980926513672,
+          "decisionRng": 2566134693,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 38,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 64.48842390179634,
+            "power": 72.26614707577974,
+            "error": 0
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 3885524287,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 39,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 51,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 118.18778863698245,
+            "power": 68.06949515417219,
+            "error": 0
+          },
+          "cost": 0.09999990463256836,
+          "decisionRng": 666866652,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 40,
+          "steps": 88,
+          "safetyTimeouts": 0
+        }
+      ],
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "brawl",
+        "currentPlayer": 3,
+        "turnCount": 40,
+        "locked": false,
+        "shotAge": 0.7333333333333332,
+        "weapon": "Well Digger",
+        "projectiles": 0,
+        "particles": 10,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 123.41118154067208,
+            "y": 476.1800626461903,
+            "angle": 62.67982874214649,
+            "power": 69.4036733886227,
+            "score": 273,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 360.84754238128016,
+            "y": 462.8191657446056,
+            "angle": 117.5282254755497,
+            "power": 70.5458588367328,
+            "score": 235,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 2",
+            "x": 794.0236858668607,
+            "y": 533.0864583333334,
+            "angle": 64.48842390179634,
+            "power": 72.26614707577974,
+            "score": 354,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 3",
+            "x": 1026.1199441874974,
+            "y": 497.19131814024524,
+            "angle": 118.18778863698245,
+            "power": 68.06949515417219,
+            "score": 638,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 189,
+          "shots": 40,
+          "safetyTimeouts": 0
+        },
+        "seed": 51,
+        "terrainRevision": 6258
+      }
+    },
+    {
+      "seed": 52,
+      "difficulty": "normal",
+      "count": 4,
+      "shots": [
+        {
+          "seed": 52,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 20.20304287225008,
+            "power": 49.484872058965266,
+            "error": 12.204729817448664
+          },
+          "cost": 1.2999999523162842,
+          "decisionRng": 1752401923,
+          "points": 31,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 1,
+          "steps": 240,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 61.12252545505762,
+            "power": 83.01882517337799,
+            "error": 12.121923635583125
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 1394963328,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 2,
+          "steps": 405,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 121.74814219102264,
+            "power": 41.259996531158684,
+            "error": 15.604489042085312
+          },
+          "cost": 1.3000001907348633,
+          "decisionRng": 812973292,
+          "points": 16,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 3,
+          "steps": 364,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 147.40617671087384,
+            "power": 42.58369797728956,
+            "error": 15.699113870388512
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 1061238850,
+          "points": 45,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 4,
+          "steps": 385,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 63.252280809730294,
+            "power": 45.88223522529006,
+            "error": 13.203033122829092
+          },
+          "cost": 0.5,
+          "decisionRng": 523246068,
+          "points": 36,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 5,
+          "steps": 541,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 63.667674634605646,
+            "power": 71.41277668960393,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 3231024662,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 6,
+          "steps": 197,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 106.2368751078844,
+            "power": 52.43013703357428,
+            "error": 15.018408790033337
+          },
+          "cost": 0.5,
+          "decisionRng": 1710422433,
+          "points": 54,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 7,
+          "steps": 591,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 102.83368097171187,
+            "power": 50.186131230182944,
+            "error": 15.110523488526178
+          },
+          "cost": 0.5,
+          "decisionRng": 2290238567,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 8,
+          "steps": 526,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 37.53147693946958,
+            "power": 74.66719157136977,
+            "error": 15.205480628170209
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 4193108750,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 9,
+          "steps": 339,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 64.21480485573412,
+            "power": 72.49643618855626,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 4062146467,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 10,
+          "steps": 88,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 99.91143021658063,
+            "power": 42.124414432048795,
+            "error": 15.694013723298472
+          },
+          "cost": 0.9000000953674316,
+          "decisionRng": 708987456,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 11,
+          "steps": 463,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 111.73633691966533,
+            "power": 75.17607749085873,
+            "error": 12.539196646581576
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 1515569321,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 12,
+          "steps": 494,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 74.99626585543156,
+            "power": 43.95704051703215,
+            "error": 14.940367665519995
+          },
+          "cost": 0.6999998092651367,
+          "decisionRng": 1347577064,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 13,
+          "steps": 487,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 79.91995098367333,
+            "power": 68.25993079692125,
+            "error": 15.800540391763871
+          },
+          "cost": 0.6999998092651367,
+          "decisionRng": 2346839768,
+          "points": 41,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 14,
+          "steps": 531,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 180,
+            "power": 98.92105687912553,
+            "error": 78.05986332210237
+          },
+          "cost": 0.8999998569488525,
+          "decisionRng": 1319979109,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 15,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 102.53458120375872,
+            "power": 63.27194001656026,
+            "error": 12.53341781886821
+          },
+          "cost": 1.3999998569488525,
+          "decisionRng": 822133449,
+          "points": 12,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 16,
+          "steps": 520,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Worm",
+          "aim": {
+            "angle": 78.12228873744607,
+            "power": 82.34793398920446,
+            "error": 0.36212396142695297
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 3948251451,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 17,
+          "steps": 760,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 10.718298256005989,
+            "power": 97.59667548965663,
+            "error": 8.900198127693274
+          },
+          "cost": 0.9000000953674316,
+          "decisionRng": 304233617,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 18,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Homing Missile",
+          "aim": {
+            "angle": 121.0669670805335,
+            "power": 53.21663855202496,
+            "error": 14.663996959405369
+          },
+          "cost": 0.5,
+          "decisionRng": 12761078,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 19,
+          "steps": 404,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 159.88346755877137,
+            "power": 42.72209913488477,
+            "error": 7.995133541593539
+          },
+          "cost": 0.5,
+          "decisionRng": 400428341,
+          "points": 41,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 20,
+          "steps": 264,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 76.78657259196044,
+            "power": 76.423753743805,
+            "error": 16.139904340349585
+          },
+          "cost": 1,
+          "decisionRng": 1705526715,
+          "points": 22,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 21,
+          "steps": 610,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Big Shot",
+          "aim": {
+            "angle": 62.73195320367813,
+            "power": 42.58049064092338,
+            "error": 16.882778091596997
+          },
+          "cost": 0.5,
+          "decisionRng": 1825737402,
+          "points": 24,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 22,
+          "steps": 357,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Single Shot",
+          "aim": {
+            "angle": 118.10227688923479,
+            "power": 43.26257804986089,
+            "error": 15.93370357580046
+          },
+          "cost": 0.5,
+          "decisionRng": 2348870101,
+          "points": 47,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 23,
+          "steps": 373,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Laser",
+          "aim": {
+            "angle": 179.39308474212885,
+            "power": 99.59959121029824,
+            "error": 71.37508351509751
+          },
+          "cost": 0.10000014305114746,
+          "decisionRng": 1840386745,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 24,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 63.20729332193732,
+            "power": 68.99249714594335,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 1374770825,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 25,
+          "steps": 188,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Laser Battery",
+          "aim": {
+            "angle": 71.57132746204734,
+            "power": 53.859346974641085,
+            "error": 16.70470851048834
+          },
+          "cost": 0.40000009536743164,
+          "decisionRng": 2806567068,
+          "points": 72,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 26,
+          "steps": 549,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Worm",
+          "aim": {
+            "angle": 117.2652875252068,
+            "power": 42.47755085099489,
+            "error": 0.45023323905601387
+          },
+          "cost": 0.7000000476837158,
+          "decisionRng": 979828415,
+          "points": 59,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 27,
+          "steps": 375,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 180,
+            "power": 99.71912077218295,
+            "error": 74.44926281774806
+          },
+          "cost": 0.2999999523162842,
+          "decisionRng": 1932060952,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 28,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Super Laser",
+          "aim": {
+            "angle": 0,
+            "power": 99.78938463758678,
+            "error": 81.68319341415533
+          },
+          "cost": 0.3000001907348633,
+          "decisionRng": 1985950417,
+          "points": 90,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 29,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Sniper Rifle",
+          "aim": {
+            "angle": 81.2842527501285,
+            "power": 48.36116545330733,
+            "error": 16.712874774613425
+          },
+          "cost": 0.7999999523162842,
+          "decisionRng": 1657524097,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 30,
+          "steps": 521,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Laser",
+          "aim": {
+            "angle": 180,
+            "power": 100,
+            "error": 183.3298578624015
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 4039971308,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 31,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 118.42404309362173,
+            "power": 72.02879160493612,
+            "error": 0
+          },
+          "cost": 0.39999985694885254,
+          "decisionRng": 3703482504,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 32,
+          "steps": 192,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Laser",
+          "aim": {
+            "angle": 1.0163586646318437,
+            "power": 97.25300761107356,
+            "error": 81.68302241173241
+          },
+          "cost": 0.40000009536743164,
+          "decisionRng": 40654635,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": false,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 33,
+          "steps": 92,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Laser",
+          "aim": {
+            "angle": 0,
+            "power": 100,
+            "error": 196.47171238419332
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2854568395,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 34,
+          "steps": 116,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Jump Jets",
+          "aim": {
+            "angle": 118.5585958853364,
+            "power": 68.75453990977257,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 1192267513,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 35,
+          "steps": 185,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Worm",
+          "aim": {
+            "angle": 104.09661517217755,
+            "power": 64.40182386636734,
+            "error": 0.9751710140496402
+          },
+          "cost": 0.5999999046325684,
+          "decisionRng": 2455665856,
+          "points": 58,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 36,
+          "steps": 537,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 62.74365604147315,
+            "power": 70.24804661981761,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 2337725098,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 37,
+          "steps": 87,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Worm",
+          "aim": {
+            "angle": 77.37501747906208,
+            "power": 52.51033802367747,
+            "error": 1.357173623363833
+          },
+          "cost": 0.5,
+          "decisionRng": 1004974814,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 38,
+          "steps": 855,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 117.0674034319818,
+            "power": 67.63801449984312,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 335938920,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 39,
+          "steps": 87,
+          "safetyTimeouts": 0
+        },
+        {
+          "seed": 52,
+          "name": "Well Digger",
+          "aim": {
+            "angle": 117.42925930768251,
+            "power": 72.18727959822863,
+            "error": 0
+          },
+          "cost": 0.20000004768371582,
+          "decisionRng": 3825036209,
+          "points": 0,
+          "selfHits": 0,
+          "terrainChanged": true,
+          "buriedBefore": false,
+          "buriedAfter": false,
+          "turn": 40,
+          "steps": 88,
+          "safetyTimeouts": 0
+        }
+      ],
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "brawl",
+        "currentPlayer": 3,
+        "turnCount": 40,
+        "locked": false,
+        "shotAge": 0.7333333333333332,
+        "weapon": "Well Digger",
+        "projectiles": 0,
+        "particles": 7,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 171.7910562487964,
+            "y": 469.1146481535943,
+            "angle": 62.74365604147315,
+            "power": 70.24804661981761,
+            "score": 237,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 497.4305458773757,
+            "y": 512,
+            "angle": 77.37501747906208,
+            "power": 52.51033802367747,
+            "score": 285,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 2",
+            "x": 701.9080231971491,
+            "y": 531,
+            "angle": 117.0674034319818,
+            "power": 67.63801449984312,
+            "score": 324,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 3",
+            "x": 1015.3783043362306,
+            "y": 470.8989583333333,
+            "angle": 117.42925930768251,
+            "power": 72.18727959822863,
+            "score": 304,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 186,
+          "shots": 40,
+          "safetyTimeouts": 0
+        },
+        "seed": 52,
+        "terrainRevision": 7778
+      }
+    }
+  ],
+  "contracts": [
+    {
+      "name": "32 beam predictions match actual immediate scores without mutating terrain/RNG/time/shots",
+      "cases": [
+        {
+          "name": "Laser",
+          "width": 0,
+          "angle": 0,
+          "predicted": 62,
+          "actual": 62,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 0,
+          "angle": 5,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 0,
+          "angle": 175,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 0,
+          "angle": 180,
+          "predicted": 62,
+          "actual": 62,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 50,
+          "angle": 0,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 50,
+          "angle": 5,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 50,
+          "angle": 175,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 50,
+          "angle": 180,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 250,
+          "angle": 0,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 250,
+          "angle": 5,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 250,
+          "angle": 175,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 250,
+          "angle": 180,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 600,
+          "angle": 0,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 600,
+          "angle": 5,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 600,
+          "angle": 175,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Laser",
+          "width": 600,
+          "angle": 180,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 0,
+          "angle": 0,
+          "predicted": 90,
+          "actual": 90,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 0,
+          "angle": 5,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 0,
+          "angle": 175,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 0,
+          "angle": 180,
+          "predicted": 90,
+          "actual": 90,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 50,
+          "angle": 0,
+          "predicted": 90,
+          "actual": 90,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 50,
+          "angle": 5,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 50,
+          "angle": 175,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 50,
+          "angle": 180,
+          "predicted": 90,
+          "actual": 90,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 250,
+          "angle": 0,
+          "predicted": 90,
+          "actual": 90,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 250,
+          "angle": 5,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 250,
+          "angle": 175,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 250,
+          "angle": 180,
+          "predicted": 90,
+          "actual": 90,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 600,
+          "angle": 0,
+          "predicted": 90,
+          "actual": 90,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 600,
+          "angle": 5,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 600,
+          "angle": 175,
+          "predicted": 0,
+          "actual": 0,
+          "pure": true
+        },
+        {
+          "name": "Super Laser",
+          "width": 600,
+          "angle": 180,
+          "predicted": 90,
+          "actual": 90,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "decision prediction calls bounded with duplicate inventory",
+      "calls": 740,
+      "limit": 740
+    },
+    {
+      "name": "difficulty retains original aim noise",
+      "rows": [
+        {
+          "difficulty": "easy",
+          "maxAngle": 4.375701972842215,
+          "maxPower": 6.817662575747818
+        },
+        {
+          "difficulty": "normal",
+          "maxAngle": 1.458567324280736,
+          "maxPower": 2.72706503029913
+        },
+        {
+          "difficulty": "hard",
+          "maxAngle": 0.39745942112058685,
+          "maxPower": 0.7292836621403751
+        }
+      ]
+    },
+    {
+      "name": "fixed seed reproduces identical decision and shot",
+      "passed": true
+    },
+    {
+      "name": "duel and party checkpoint round trips preserve changed terrain, scores, shots and inventory",
+      "rows": [
+        {
+          "count": 2,
+          "equal": true
+        },
+        {
+          "count": 4,
+          "equal": true
+        }
+      ]
+    },
+    {
+      "name": "autonomous three-CPU brawl completes with wind and low gravity",
+      "state": {
+        "scene": "results",
+        "overlay": "results",
+        "mode": "brawl",
+        "currentPlayer": 3,
+        "turnCount": 40,
+        "locked": false,
+        "shotAge": 5.658333333333404,
+        "weapon": "Worm",
+        "projectiles": 0,
+        "particles": 0,
+        "blasts": 0,
+        "emitters": 0,
+        "events": 0,
+        "players": [
+          {
+            "name": "Tank 0",
+            "x": 184.79110997610022,
+            "y": 450.0239720269584,
+            "angle": 82,
+            "power": 42,
+            "score": 472,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 1",
+            "x": 372.7983832551049,
+            "y": 434.2455403770486,
+            "angle": 115.60061560198665,
+            "power": 72.38398950975389,
+            "score": 271,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 2",
+            "x": 824.9751517559636,
+            "y": 467.0226953476017,
+            "angle": 61.560243455320595,
+            "power": 70.24276458658278,
+            "score": 395,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          },
+          {
+            "name": "Tank 3",
+            "x": 1012.7631944076612,
+            "y": 443.00571108388385,
+            "angle": 102.40996135398746,
+            "power": 48.437664094008504,
+            "score": 475,
+            "moves": 4,
+            "buried": false,
+            "shots": 10,
+            "remaining": 0
+          }
+        ],
+        "stats": {
+          "maxProjectiles": 1,
+          "maxParticles": 171,
+          "shots": 40,
+          "safetyTimeouts": 0
+        },
+        "seed": 817,
+        "terrainRevision": 8466
+      }
+    }
+  ],
+  "version": "4.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "logs": [],
+  "summary": {
+    "shots": 260,
+    "completeMatches": 8,
+    "selfHitShots": 0,
+    "totalPoints": 7581,
+    "terrainChangeShots": 217,
+    "decisionMs": {
+      "p50": 0.5999999046325684,
+      "p95": 1.5,
+      "max": 4.6000001430511475
+    }
+  }
+}

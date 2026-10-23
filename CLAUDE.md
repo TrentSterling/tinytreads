@@ -26,3 +26,5 @@ Single-file turn-based artillery game (Pocket Tanks / Scorched Earth lineage): d
 `window.POCKET` (alias `window.TINY`): `version` (`4.0.1`), `WEAPONS` (400), `PACKS`, `settings`, `startPractice`, `showTitle`. Title ids: `#title`, `#quickPlay`, `#titleGarage`, `#titleArsenal`, `#titleHelp`, `#titlePrivate`, `#titleSound`, `#fullscreenTitle`, `#attractCaption`. Battle ids: `#hud`, `#field` (terrain canvas), `#fire`, `#moveLeft`, `#moveRight`, `#angleUp`, `#angleDown`, `#nextWeapon`, `#previousWeapon`, `#shotNote`, `#ammo`, `#moves`, `#menuBtn`, `#arsenalBtn`, `#helpBtn`. `window.TINY_DEMO` is set inside the attract-mode iframe.
 
 Harness driver notes: `tools/cdp.mjs` (zero-dep Chrome DevTools driver, real GPU, `--mute-audio`; the game has audio and the harness would otherwise play it through the speakers).
+
+CPU noise-robustness follow-up: `node tools/cpu-robustness.mjs BASELINE/index.html HELD/index.html index.html` compares 1,472 fixed-seed shots per source across difficulty, position, wind and gravity. See `qa/cpu-noise/README.md`. Keep historical receipts under `qa/cpu-tactics/` associated with the held first candidate.

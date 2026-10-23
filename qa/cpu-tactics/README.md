@@ -1,5 +1,7 @@
 # CPU tactics candidate, 2026-10-23
 
+Historical report for held commit `bfe5167fe8c8a950a21ecc0612426daee5138224`. Independent review placed publication on hold because of the new seed-4 hit-to-miss regression below. The bounded noise-aware follow-up and its fresh evidence are documented in [../cpu-noise/README.md](../cpu-noise/README.md). The receipts in this directory retain the held candidate's results.
+
 This is an unpushed review candidate based on `977b718513cdbd099093320e5e2bb170c9b2bb35`. Publication requires independent review. The shared `C:/trontstack/tinytreads` checkout was clean at older commit `b391b7a229e79f530b4609387d007280288ca09e` and was left untouched. Remote main was rechecked and still matched the baseline, with no open PRs at intake.
 
 The authoritative source is `versions/tiny-treads-v5.html` (game version 4.0.1). `tools/polish.py` generates `index.html`; the original v4 drop is retained byte for byte. Existing About assets and content remain unchanged.

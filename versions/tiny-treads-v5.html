@@ -621,14 +621,18 @@ function prepareCPU(){const p=active(),available=p.inventory.map((s,i)=>({s,i}))
  let choice=available[ri(0,available.length-1)];if(p.buried){const utility=available.find(o=>o.s.w.self||o.s.w.kind==='worm'||o.s.w.kind==='move');if(utility)choice=utility;}else{const damage=available.filter(o=>o.s.w.damage>0);if(damage.length&&rand()<.8)choice=damage[ri(0,damage.length-1)];}
  // A deliberately small model: preserve the existing choices for bespoke payloads
  // and buried recovery. Evaluate at most four distinct, familiar weapons per turn.
- const modeled=['Single Shot','Big Shot','Laser','Super Laser'],plans=new Map();
- const plan=w=>{if(!plans.has(w.id)){const aim=solveAim(p,w),q=predict(p,aim.angle,aim.power,w);let value=q.value;
-   if(value===undefined){value=0;for(const t of players){const d=Math.max(0,hypot(q.x-t.x,q.y-t.y+12)-14);if(d<=w.r)value+=(t.i===p.i?-1:1)*Math.max(1,Math.round(w.damage*(1-d/(w.r+1))));}}
-   plans.set(w.id,{aim,value});}return plans.get(w.id);};
+ const modeled=['Single Shot','Big Shot','Laser','Super Laser'],plans=new Map(),err=settings.difficulty==='easy'?{a:4.8,p:7}:settings.difficulty==='hard'?{a:.4,p:.8}:{a:1.6,p:2.8};
+ const plan=w=>{if(!plans.has(w.id)){const aim=solveAim(p,w),valueAt=(angle,power)=>{const q=predict(p,angle,power,w);if(q.value!==undefined)return q.value;let value=0;for(const t of players){const d=Math.max(0,hypot(q.x-t.x,q.y-t.y+12)-14);if(d<=w.r)value+=(t.i===p.i?-1:1)*Math.max(1,Math.round(w.damage*(1-d/(w.r+1))));}return value;};
+   // Favor shots that survive aim error, not just a perfect centerline. Two
+   // deterministic endpoint probes add at most eight predictions (740 total).
+   // This is a conservative sample, not a guarantee over all angle/power pairs.
+   const ideal=valueAt(aim.angle,aim.power);let value=ideal;for(const sign of [-1,1])value=Math.min(value,valueAt(clamp(aim.angle+sign*err.a,0,180),clamp(aim.power+sign*err.p,1,100)));
+   plans.set(w.id,{aim,value,ideal});}return plans.get(w.id);};
  if(!p.buried&&modeled.includes(choice.s.w.name)&&(settings.difficulty==='hard'||rand()<(settings.difficulty==='easy'?.35:.7))){
-  let best=plan(choice.s.w).value;for(const o of available){if(!modeled.includes(o.s.w.name))continue;const value=plan(o.s.w).value;if(value>best){best=value;choice=o;}}
+  // If the samples tie (often all zero on Easy), retain the ideal-score ranking.
+  let best=plan(choice.s.w);for(const o of available){if(!modeled.includes(o.s.w.name))continue;const next=plan(o.s.w);if(next.value>best.value||next.value===best.value&&next.ideal>best.ideal){best=next;choice=o;}}
  }
- p.selected=choice.i;const w=choice.s.w,aim=plans.has(w.id)?plans.get(w.id).aim:solveAim(p,w),err=settings.difficulty==='easy'?{a:4.8,p:7}:settings.difficulty==='hard'?{a:.4,p:.8}:{a:1.6,p:2.8};aim.angle=clamp(aim.angle+rnd(-err.a,err.a),0,180);aim.power=clamp(aim.power+rnd(-err.p,err.p),1,100);G.aiAim=aim;G.aiTimer=1;updateHud(true);
+ p.selected=choice.i;const w=choice.s.w,aim=plans.has(w.id)?plans.get(w.id).aim:solveAim(p,w);aim.angle=clamp(aim.angle+rnd(-err.a,err.a),0,180);aim.power=clamp(aim.power+rnd(-err.p,err.p),1,100);G.aiAim=aim;G.aiTimer=1;updateHud(true);
 }
 function simStep(dt){if(G.toastTime>0){G.toastTime-=dt;if(G.toastTime<=0)$('toast').hidden=true;}
  if(G.overlay&&G.scene==='battle')return;G.time+=dt;G.tick++;
