@@ -1,0 +1,211 @@
+{
+  "sourceSha256": "1fc820b388328d641280742642d9343559bb8171790eff5bb9050d2c1c75a6d6",
+  "passed": true,
+  "distributionPassed": true,
+  "regressions": [
+    {
+      "id": "flat-740-minus8",
+      "difficulty": "normal",
+      "seed": 3733412389,
+      "rows": [
+        {
+          "sx": 140,
+          "name": "Super Laser",
+          "points": 90
+        },
+        {
+          "sx": 190,
+          "name": "Super Laser",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "flat-820-minus2",
+      "difficulty": "easy",
+      "seed": 4049056649,
+      "rows": [
+        {
+          "sx": 140,
+          "name": "Super Laser",
+          "points": 90
+        },
+        {
+          "sx": 190,
+          "name": "Super Laser",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "flat-820-minus2",
+      "difficulty": "normal",
+      "seed": 3733412389,
+      "rows": [
+        {
+          "sx": 140,
+          "name": "Super Laser",
+          "points": 90
+        },
+        {
+          "sx": 190,
+          "name": "Super Laser",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "flat-780-lowgrav",
+      "difficulty": "normal",
+      "seed": 3733412389,
+      "rows": [
+        {
+          "sx": 140,
+          "name": "Super Laser",
+          "points": 90
+        },
+        {
+          "sx": 190,
+          "name": "Super Laser",
+          "points": 90
+        }
+      ]
+    }
+  ],
+  "difficulty": [
+    {
+      "difficulty": "easy",
+      "counts": {
+        "baseline": {
+          "shots": 432,
+          "hits": 191,
+          "points": 8463
+        },
+        "ideal": {
+          "shots": 432,
+          "hits": 187,
+          "points": 11780
+        },
+        "paired": {
+          "shots": 432,
+          "hits": 185,
+          "points": 9875
+        },
+        "candidate": {
+          "shots": 432,
+          "hits": 187,
+          "points": 11780
+        }
+      },
+      "newMissesVsBaseline": 70,
+      "newMissesVsIdeal": 0,
+      "newMissesVsPaired": 8,
+      "lossesFromPairedAlsoBaselineHits": 3
+    },
+    {
+      "difficulty": "normal",
+      "counts": {
+        "baseline": {
+          "shots": 432,
+          "hits": 275,
+          "points": 12063
+        },
+        "ideal": {
+          "shots": 432,
+          "hits": 262,
+          "points": 17682
+        },
+        "paired": {
+          "shots": 432,
+          "hits": 305,
+          "points": 11281
+        },
+        "candidate": {
+          "shots": 432,
+          "hits": 292,
+          "points": 14652
+        }
+      },
+      "newMissesVsBaseline": 54,
+      "newMissesVsIdeal": 0,
+      "newMissesVsPaired": 36,
+      "lossesFromPairedAlsoBaselineHits": 28
+    },
+    {
+      "difficulty": "hard",
+      "counts": {
+        "baseline": {
+          "shots": 480,
+          "hits": 372,
+          "points": 19007
+        },
+        "ideal": {
+          "shots": 480,
+          "hits": 449,
+          "points": 33269
+        },
+        "paired": {
+          "shots": 480,
+          "hits": 480,
+          "points": 27186
+        },
+        "candidate": {
+          "shots": 480,
+          "hits": 480,
+          "points": 25916
+        }
+      },
+      "newMissesVsBaseline": 0,
+      "newMissesVsIdeal": 0,
+      "newMissesVsPaired": 0,
+      "lossesFromPairedAlsoBaselineHits": 0
+    }
+  ],
+  "metrics": [
+    {
+      "label": "baseline",
+      "shots": 1344,
+      "selfHitShots": 0,
+      "terrainChangeShots": 793,
+      "decisionMs": {
+        "p50": 0.5,
+        "p95": 1,
+        "max": 4.900000095367432
+      }
+    },
+    {
+      "label": "ideal",
+      "shots": 1344,
+      "selfHitShots": 0,
+      "terrainChangeShots": 598,
+      "decisionMs": {
+        "p50": 1.2999999523162842,
+        "p95": 2,
+        "max": 4.3999998569488525
+      }
+    },
+    {
+      "label": "paired",
+      "shots": 1344,
+      "selfHitShots": 0,
+      "terrainChangeShots": 1003,
+      "decisionMs": {
+        "p50": 1.2999999523162842,
+        "p95": 2.0999999046325684,
+        "max": 5
+      }
+    },
+    {
+      "label": "candidate",
+      "shots": 1344,
+      "selfHitShots": 0,
+      "terrainChangeShots": 838,
+      "decisionMs": {
+        "p50": 1.3000001907348633,
+        "p95": 2.1999998092651367,
+        "max": 4.700000047683716
+      }
+    }
+  ],
+  "predictionLimit": 752
+}

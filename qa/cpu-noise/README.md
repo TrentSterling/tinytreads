@@ -1,5 +1,7 @@
 # Bounded CPU aim-error robustness follow-up
 
+**Historical held candidate:** independent review withdrew approval of `0a3cc5ab441895110b0dedcd0b126322fd6510d2` because the paired probes miss independent mixed-sign errors. The receipts below remain unchanged. See [the corrected sampling report](../cpu-independent-errors/README.md) for the new candidate, reproduced failures and explicit tradeoffs.
+
 This unpushed candidate follows held commit `bfe5167fe8c8a950a21ecc0612426daee5138224`. That commit remains on `codex/cpu-tactics-20261023`; the follow-up is on `codex/cpu-noise-robustness-20261023`. Re-review is required before publication. The original baseline remains `977b718513cdbd099093320e5e2bb170c9b2bb35` on `rollback/pre-cpu-tactics-20261023`.
 
 ## Problem and correction

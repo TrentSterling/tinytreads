@@ -28,3 +28,5 @@ Single-file turn-based artillery game (Pocket Tanks / Scorched Earth lineage): d
 Harness driver notes: `tools/cdp.mjs` (zero-dep Chrome DevTools driver, real GPU, `--mute-audio`; the game has audio and the harness would otherwise play it through the speakers).
 
 CPU noise-robustness follow-up: `node tools/cpu-robustness.mjs BASELINE/index.html HELD/index.html index.html` compares 1,472 fixed-seed shots per source across difficulty, position, wind and gravity. See `qa/cpu-noise/README.md`. Keep historical receipts under `qa/cpu-tactics/` associated with the held first candidate.
+
+Independent-error correction: `node tools/cpu-independent-errors.mjs BASELINE/index.html IDEAL/index.html PAIRED/index.html index.html` adds the reviewer regressions, translated cases, 1,344-shot neighborhoods and a live mixed-sign error grid. IDEAL is bfe5167 and PAIRED is the withdrawn 0a3cc5ab candidate. See `qa/cpu-independent-errors/README.md` for current evidence, the 752-call bound and remaining tradeoffs. Earlier QA folders are historical.

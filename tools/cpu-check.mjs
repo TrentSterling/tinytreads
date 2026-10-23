@@ -23,7 +23,7 @@ try{
   assert.ok(beamOracle.every(q=>q.pure&&q.predicted===q.actual),JSON.stringify(beamOracle.filter(q=>!q.pure||q.predicted!==q.actual)));
   result.contracts.push({name:'32 beam predictions match actual immediate scores without mutating terrain/RNG/time/shots',cases:beamOracle});
   const budget=await page.eval(`(()=>{qaSetup(123,'plain','hard',['Single Shot','Big Shot','Laser','Super Laser','Single Shot','Big Shot','Laser','Super Laser','Single Shot','Big Shot']);const old=predict;let calls=0;predict=(...a)=>{calls++;return old(...a)};try{prepareCPU()}finally{predict=old}return calls})()`);
-  assert.ok(budget<=740,JSON.stringify({budget}));result.contracts.push({name:'decision prediction calls bounded with duplicate inventory',calls:budget,limit:740});
+  assert.ok(budget<=752,JSON.stringify({budget}));result.contracts.push({name:'decision prediction calls bounded with duplicate inventory',calls:budget,limit:752});
   const noise=await page.eval(`(()=>{const rows=[];for(const difficulty of ['easy','normal','hard']){let maxAngle=0,maxPower=0;for(let seed=1;seed<=30;seed++){qaSetup(seed,'plain',difficulty,['Single Shot']);const ideal=solveAim(active(),currentWeapon());prepareCPU();maxAngle=Math.max(maxAngle,Math.abs(G.aiAim.angle-ideal.angle));maxPower=Math.max(maxPower,Math.abs(G.aiAim.power-ideal.power));}rows.push({difficulty,maxAngle,maxPower});}return rows})()`);
   assert.ok(noise[0].maxAngle>4&&noise[1].maxAngle>1&&noise[2].maxAngle<=.401);assert.ok(noise[0].maxPower>6&&noise[1].maxPower>2&&noise[2].maxPower<=.801);
   result.contracts.push({name:'difficulty retains original aim noise',rows:noise});

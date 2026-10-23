@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "sourceSha256": "1fc820b388328d641280742642d9343559bb8171790eff5bb9050d2c1c75a6d6",
+  "comparison": "Complete report equal excluding cost and decisionMs",
+  "first": {
+    "shots": 260,
+    "completeMatches": 8,
+    "selfHitShots": 0,
+    "totalPoints": 7581,
+    "terrainChangeShots": 217,
+    "decisionMs": {
+      "p50": 0.5999999046325684,
+      "p95": 1.5999999046325684,
+      "max": 4.700000047683716
+    }
+  },
+  "repeat": {
+    "shots": 260,
+    "completeMatches": 8,
+    "selfHitShots": 0,
+    "totalPoints": 7581,
+    "terrainChangeShots": 217,
+    "decisionMs": {
+      "p50": 0.5999999046325684,
+      "p95": 1.4000000953674316,
+      "max": 5
+    }
+  }
+}
