@@ -94,6 +94,34 @@ input,select{background:#111b20;border-color:#48585e;color:#eef2e9;border-radius
 #brawl.public-room #partyJoinRow{display:none}
 #brawl.in-room .sheet{width:880px}
 
+
+/* 4.0.3: portrait title controls use the viewport; gameplay keeps its fixed stage. */
+@media (max-width:600px) and (orientation:portrait){
+ #stage:has(>#title:not([hidden])){width:100%;height:100%;left:0;top:0;transform:none!important}
+ #stage:has(>#title:not([hidden])) #field{inset:auto;left:50%;bottom:0;width:900px;height:auto;transform:translateX(-50%);opacity:.55}
+ #title{inset:calc(60px + env(safe-area-inset-top)) 0 0;padding:0 max(16px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:contain;touch-action:pan-y;pointer-events:auto;background:linear-gradient(#071015ee,#071015a8);scrollbar-width:thin;scrollbar-color:#58666a #0b141a}
+ #title>*{flex-shrink:0}
+ #titleContent{display:contents}
+ #title #logo{order:1;width:100%;max-width:360px;height:auto;flex-shrink:0}
+ #title .tagline{order:2;text-align:center;font-size:17px;line-height:1.4;margin:0;color:#c3ceca}
+ #titleTanks{order:3;position:static;width:min(100%,360px);height:auto;margin:6px 0 14px;flex-shrink:0}
+ #title .title-actions{order:4;width:100%;max-width:360px;margin:0;gap:12px;flex-shrink:0}
+ #title .title-actions>button{height:60px;font-size:20px;padding:12px 14px;gap:10px}
+ #title .title-actions button small{font-size:13px;white-space:nowrap}
+ #title .title-actions .twocol button{height:48px;font-size:16px;padding:8px}
+ #title #morePanel{gap:10px;padding:4px 0 0}
+ #title #morePanel button{height:auto;min-height:48px;font-size:15px;line-height:1.25;padding:10px 8px;margin:0}
+ #title #resumeOnline{height:auto;min-height:48px;font-size:16px}
+ #title .cornerbuttons{order:5;position:static;justify-content:center;gap:12px;margin:20px 0 16px;pointer-events:auto}
+ #title .cornerbuttons button{height:44px;font-size:14px;padding:10px 14px}
+ #title .signature{order:6;position:static;margin:0;text-align:center;font-size:14px}
+ #title .signature a{display:inline-block;min-height:44px;line-height:44px}
+ #title #attractCaption{order:7;position:static;justify-content:center;margin:4px 0 10px;font-size:12px}
+ #title .buildtag{order:8;position:static;font-size:11px}
+ body:has(#title:not([hidden])) #portraitHint{display:none}
+ body:has(#title:not([hidden])) #trontAbout.tront-about{top:max(10px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right))}
+}
+
 </style>
 </head>
 <body>
@@ -767,7 +795,7 @@ function attractStep(dt){G.attract+=dt;for(let i=events.length-1;i>=0;i--)if(eve
 
 // -- DOM instruments stay crisp; only values that change are rewritten --
 const overlays=['title','setup','shop','arsenal','pause','help','results'];
-function overlay(id){G.overlay=id||null;for(const k of overlays)$(k).hidden=k!==id;if(id)keys.clear();updateHud(true);}
+function overlay(id){G.overlay=id||null;for(const k of overlays)$(k).hidden=k!==id;if(id==='title')$('title').scrollTop=0;if(id)keys.clear();updateHud(true);}
 function showTitle(){G.scene='title';G.mode='cpu';resetEffects();initPlayers('Player 1');generateTerrain(987642,false);placeTanks();G.titleTerrainTime=G.time;G.attract=1.3;$('hud').hidden=true;$('rangebar').hidden=true;$('toast').hidden=true;overlay('title');updateSettingsButtons();}
 function setup(mode='cpu'){$('modeInput').value=mode;$('difficultyInput').value=settings.difficulty;$('poolInput').value=settings.pool;$('biomeInput').value=settings.biome;$('nameInput').value=settings.name||'Player 1';$('seedInput').value='';overlay('setup');}
 function configure(fromSetup=true,mode='cpu'){if(fromSetup){settings.difficulty=$('difficultyInput').value;settings.pool=$('poolInput').value;settings.biome=$('biomeInput').value;settings.name=$('nameInput').value.trim()||'Player 1';mode=$('modeInput').value;}G.mode=mode;const raw=fromSetup?$('seedInput').value.trim():'';G.seedLabel=raw||String((Date.now()^Math.floor(Math.random()*1e9))>>>0);G.seed=/^-?\d+$/.test(G.seedLabel)?(Number(G.seedLabel)>>>0):seedHash(G.seedLabel);saveSettings();seedRng(G.seed);initPlayers(settings.name||'Player 1');G.startInventory=null;history=[];resetEffects();}
@@ -858,7 +886,7 @@ for(const [pack]of PACKS){const o=document.createElement('option');o.value=pack;
 // TINY TREADS 3.1 — UI polish, tank art pass, stronger attract mode, and weapon upgrades.
 // The artillery/material engine above remains independent of online transport.
 // ============================================================================
-const TT_VERSION='4.0.2';
+const TT_VERSION='4.0.3';
 const LAYOUTS={hills:'Rolling hills',ridge:'The great divide',bowl:'The punch bowl',terraces:'Stepping stones',arches:'Arch enemies',plain:"No man's lawn"};
 const RULES={classic:'Classic artillery',mirror:'Mirror arsenal',mystery:'Mystery magazine',trick:'Trick-shot pool'};
 const HULLS={scout:'Scout',boxer:'Boxer',dart:'Dart',bulldog:'Bulldog'},TURRETS={standard:'Cannon',twin:'Twin',stub:'Stubby'},FLAGS={none:'Clean',flag:'Pennant',aerial:'Aerial',bolt:'Lightning'};

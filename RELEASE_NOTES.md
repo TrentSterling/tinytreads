@@ -1,3 +1,14 @@
+# Tiny Treads 4.0.3
+
+Phone portrait titles now use the available screen space. Quick battle has
+20-pixel text and a 64-pixel-high button; More choices and utilities remain
+reachable through a scrollable title. Returning from a game or menu starts at
+the top again. Desktop, tablet, landscape and battle layouts retain their
+existing dimensions.
+
+The change lives in the new v7 source drop, preserving v6. See
+`qa/portrait-title/README.md` for the responsive regression checks and scope.
+
 # Tiny Treads 4.0.2
 
 Returning players with an obsolete saved biome can finish a match and use the

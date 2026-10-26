@@ -1,9 +1,10 @@
 # CLAUDE.md, Tiny Treads
 
-Current release candidate: 4.0.2. `versions/tiny-treads-v6.html` normalizes saved
-game-rule enums before play, preserving names, garage choices and records. The
-v5 source is unchanged. `node tools/saved-rules-audit.mjs` covers stale/current
-and legacy saves through full 20-shot matches. Tests remain headless and muted.
+Current release candidate: 4.0.3. `versions/tiny-treads-v7.html` adds a responsive
+portrait title while preserving the fixed battle stage and desktop/tablet layout.
+The v6 source is unchanged. `node tools/portrait-title-audit.mjs` checks title
+geometry and flows across ten viewports. Tests remain headless and muted; no
+physical input, focus, audio or native gesture qualification is claimed.
 
 Single-file turn-based artillery game (Pocket Tanks / Scorched Earth lineage): destructible terrain, 400 weapons, garage, quick battle against the CPU, local and online play. Live at https://tront.xyz/tinytreads/ (GitHub Pages, `main` root). ChatGPT writes the drops; this repo hosts them.
 
