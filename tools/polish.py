@@ -1,13 +1,13 @@
 """Build index.html from the latest ChatGPT drop in versions/ for hosting at https://tront.xyz/tinytreads/.
 Exact bytes except: social meta + canonical after the description, and em dashes out of player-facing strings.
 Every replacement must match exactly once (or the stated count) or the script aborts. Run from the repo root:
-    python tools/polish.py [versions/tiny-treads-v7.html]
+    python tools/polish.py [versions/tiny-treads-v8.html]
 """
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'versions' / 'tiny-treads-v7.html'
+SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'versions' / 'tiny-treads-v8.html'
 DST = ROOT / 'index.html'
 html = SRC.read_text(encoding='utf-8')
 orig = html

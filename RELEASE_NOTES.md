@@ -1,3 +1,17 @@
+# Tiny Treads 4.0.4
+
+Phone portrait menus now use readable text and controls at least 44 pixels high.
+Help, setup, garage, arsenal, shop, pause, lobbies, credits and results share a
+scrollable layout. The weapon list stays bounded, the shop preview travels with
+its controls, and returning to a menu starts at the top. Repeated updates to the
+same open menu retain the current scroll position.
+
+At 390 by 844, Help instructions grow from 5.2 to 16 pixels and Got it grows from
+12.87 to 44 pixels high. Desktop, tablet, landscape and battle dimensions retain
+their existing behavior. The new v8 source preserves the v7 drop.
+
+See `qa/phone-menus/README.md` for validation and limitations.
+
 # Tiny Treads 4.0.3
 
 Phone portrait titles now use the available screen space. Quick battle has
