@@ -16,7 +16,7 @@ for(const[width,height]of[[320,480],[360,640],[390,844],[430,932],[600,800],[601
  try{
   let prior=null;
   if(baseline&&!portrait){await boot(p,baseline);prior=await p.eval(geometry);}
-  await boot(p,target);const initial=await p.eval(geometry);assert.equal(await p.eval('POCKET.version'),'4.0.3');
+  await boot(p,target);const initial=await p.eval(geometry);assert.equal(await p.eval('POCKET.version'),'4.0.4');
   if(prior)assert.deepEqual(initial,prior,'desktop/tablet/title geometry must remain exact');
   if(portrait){assert.equal(initial.stage.w,width);assert.equal(initial.stage.h,height);assert.equal(initial.touch,'pan-y');assert.ok(initial.buttons.find(b=>b.id==='quickPlay').font>=20);}
   else fixedStage(initial,width,height);
@@ -36,10 +36,10 @@ for(const[width,height]of[[320,480],[360,640],[390,844],[430,932],[600,800],[601
    assert.ok(await p.eval(`(()=>{const a=document.querySelector('#trontAbout>summary'),r=a.getBoundingClientRect(),t=document.getElementById('title').getBoundingClientRect(),hit=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return r.bottom<=t.top&&(hit===a||a.contains(hit))})()`),'About remains clear and reachable');
   }
   await p.eval("document.getElementById('resumeOnline').hidden=true");
-  // Existing menu routes restore the exact fixed stage; actions stay wired as before.
+  // Existing menu routes use the phone overlay stage or retain the fixed stage elsewhere.
   const flows=[];
   for(const[open,close,overlay]of[['titleGarage','garageBack','garage'],['titleHelp','helpClose','help'],['titleCredits','creditsBack','credits'],['titleArsenal','arsenalClose','arsenal'],['draftPlay','setupBack','setup'],['localPlay','setupBack','setup']]){
-   await p.eval("document.getElementById('title').scrollTop=10000");await click(p,open);assert.equal(await p.eval('POCKET.state.overlay'),overlay);fixedStage(await p.eval(geometry),width,height);await click(p,close);assert.equal(await p.eval('POCKET.state.overlay'),'title');assert.equal(await p.eval("document.getElementById('title').scrollTop"),0,'title returns to top');flows.push(open+' -> '+overlay+' -> title');
+   await p.eval("document.getElementById('title').scrollTop=10000");await click(p,open);assert.equal(await p.eval('POCKET.state.overlay'),overlay);const menu=await p.eval(geometry);if(portrait){assert.equal(menu.stage.w,width);assert.equal(menu.stage.h,height);}else fixedStage(menu,width,height);await click(p,close);assert.equal(await p.eval('POCKET.state.overlay'),'title');assert.equal(await p.eval("document.getElementById('title').scrollTop"),0,'title returns to top');flows.push(open+' -> '+overlay+' -> title');
   }
   await click(p,'quickPlay');await p.eval('for(let i=0;i<100&&POCKET.state.scene!=="battle";i++)POCKET.advance(.1,false);POCKET.render()');assert.equal(await p.eval('POCKET.state.scene'),'battle');fixedStage(await p.eval(geometry),width,height);
   await click(p,'menuBtn');assert.equal(await p.eval('POCKET.state.overlay'),'pause');await click(p,'resume');assert.equal(await p.eval('POCKET.state.overlay'),null);

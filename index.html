@@ -122,6 +122,128 @@ input,select{background:#111b20;border-color:#48585e;color:#eef2e9;border-radius
  body:has(#title:not([hidden])) #trontAbout.tront-about{top:max(10px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right))}
 }
 
+
+/* 4.0.4: one portrait layout for the existing menu and results sheets. */
+@media (max-width:600px) and (orientation:portrait){
+ body:has(#stage>.overlay:not([hidden])){position:fixed;inset:0;overflow:clip}
+ #stage:has(>.overlay:not([hidden])){width:100%;height:100%;left:0;top:0;transform:none!important;overflow:clip}
+ #stage:has(>.overlay:not(#title):not([hidden])):before{content:'';position:absolute;inset:0;background:#071015;z-index:9;pointer-events:none}
+ #stage>.overlay:not(#title){inset:calc(60px + env(safe-area-inset-top)) 0 0;display:block;padding:0 max(12px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:contain;touch-action:pan-y;scrollbar-width:thin;scrollbar-color:#58666a #0b141a}
+ #stage>.overlay:not(#title) .sheet{width:100%!important;min-width:0!important;max-width:none!important;height:auto!important;min-height:0!important;max-height:none;padding:20px 16px;margin:0;overflow-wrap:anywhere}
+ #stage>.overlay:not(#title) .sheet *{min-width:0}
+ #stage>.overlay:not(#title) .sheet h2{font-size:28px;line-height:1.15}
+ #stage>.overlay:not(#title) .sheet p{font-size:16px!important;line-height:1.5}
+ #stage>.overlay:not(#title) .sheet button{min-width:44px;min-height:44px;height:auto;font-size:16px;line-height:1.25;padding:10px 12px;white-space:normal}
+ #stage>.overlay:not(#title) .sheet input:not([type=checkbox]),#stage>.overlay:not(#title) .sheet select{font-size:16px;min-height:44px;height:auto;max-width:100%}
+ #stage>.overlay:not(#title) .sheet input[type=checkbox]{width:22px;height:22px;min-width:22px;flex:none}
+ #stage>.overlay:not(#title) .sheet .row{flex-wrap:wrap;gap:12px}
+ #stage>.overlay:not(#title) .sheet .row>button{flex:1 1 auto}
+ #stage>.overlay:not(#title) .sheet label{font-size:16px}
+ #stage>.overlay:not(#title) .sheet .eyebrow{font-size:12px;line-height:1.4}
+ #stage>.overlay:not(#title) .sheet .subtle{font-size:14px}
+ .setup-grid,.advanced-grid{grid-template-columns:1fr;gap:14px}
+ .setup-grid input,.setup-grid select,.advanced-grid input,.advanced-grid select{width:100%}
+ .setup-sheet .landscape-peek{position:static;display:block;width:100%;max-width:240px;height:auto;margin:14px 0}
+ .setup-sheet details{margin:18px 0;padding:0}
+ .setup-sheet summary{min-height:44px;display:list-item;padding:12px 0;font-size:16px}
+ .setup-checks{display:grid;gap:4px}
+ .setup-checks label,.checkwrap label{min-height:44px;gap:12px}
+ .setup-sheet>.row>.row{width:100%}
+ .setup-sheet .ruleline{font-size:16px!important;line-height:1.5}
+ #shop .shop-sheet{display:flex;flex-direction:column}
+ #shop .shop-sheet>.row{order:0;align-items:flex-start}
+ #shop .shop-layout{order:2;display:grid;grid-template-columns:1fr 1fr;gap:12px;height:auto;margin:14px 0 0}
+ #offer{order:0;grid-column:1/-1;grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:minmax(60px,auto);max-height:min(52dvh,460px);overflow-y:auto;touch-action:pan-y;overscroll-behavior-y:contain;padding:2px 4px 6px 0}
+ #shop .draft-side{order:1;padding:10px}
+ #shop .draft-side h3{font-size:16px;line-height:1.3}
+ #shop .draft-slot{height:auto;min-height:40px;font-size:14px;line-height:1.25}
+ #shop .draft-slot.empty{min-height:26px}
+ #shop .draft-slot span{white-space:normal;overflow:visible}
+ #shop .offer{min-height:60px;text-align:left}
+ #shop .offer>span{flex:1}
+ #shop .offer .wpname{white-space:normal;max-width:none;overflow:visible;font-size:16px}
+ #shop .offer small{font-size:13px;line-height:1.3}
+ #shop .shop-footer{order:1;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0 0;padding:0;height:auto;align-items:stretch}
+ #shop #shopAuto,#shop #shopExit{order:0;width:100%;margin:0}
+ #shop .shop-footer #shopDescription{order:2;grid-column:1/-1;height:auto;font-size:16px;line-height:1.4}
+ #shop .shop-footer #demoDock{order:1}
+ #stage>.overlay #demoDock{position:relative;left:auto!important;top:auto!important;width:100%!important;height:auto!important;aspect-ratio:5/2;flex:none;grid-column:1/-1;margin:0}
+ #stage>.overlay #weaponDemo{display:block;width:100%;height:100%}
+ #stage>.overlay .demo-caption{font-size:11px}
+ #arsenal .arsenal-controls{display:grid;grid-template-columns:1fr;gap:10px}
+ #arsenal .arsenal-controls input,#arsenal .arsenal-controls select{width:100%;max-width:none}
+ #arsenal .arsenal-layout{display:flex;flex-direction:column;height:auto;gap:16px}
+ #arsenal .arsenal-list{grid-template-columns:1fr;min-height:140px;max-height:42dvh;flex:none;padding:2px 4px 6px 0;overscroll-behavior-y:contain}
+ #arsenal .arsenal-item{min-height:64px;text-align:left;flex-shrink:0}
+ #arsenal .arsenal-item .wpname{white-space:normal;overflow:visible;font-size:16px}
+ #arsenal .arsenal-item small{font-size:14px;line-height:1.35}
+ #arsenal .weapon-detail{padding:16px}
+ #arsenal .weapon-detail h3{font-size:24px}
+ #arsenal .detail-meta,#arsenal .arsenal-bottom{font-size:14px;line-height:1.4}
+ #arsenal .badge{font-size:13px}
+ #arsenal #equipWeapon{margin-top:12px}
+ .pause-sheet .settingsrow{font-size:16px;gap:12px;flex-wrap:wrap}
+ .pause-sheet .settingsrow span{flex:1}
+ #pause #volume{width:100%;height:44px;min-height:44px;border:0;box-shadow:none;background:linear-gradient(#090e05,#090e05) center/100% 14px no-repeat}
+ .help-grid{grid-template-columns:1fr;gap:0;margin:16px 0}
+ .help-grid div{font-size:16px;line-height:1.5;padding:12px 0}
+ .help-grid b{font-size:16px}
+ #results .result-title{font-size:28px!important;line-height:1.2;margin:12px 0 18px!important}
+ #results .scorecards,#results .four-results .scorecards{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0}
+ #results .scorecard{padding:16px}
+ #results .scorecard strong{font-size:48px;overflow-wrap:anywhere}
+ #results .scorecard h3{font-size:18px;line-height:1.3}
+ #results .scorecard small,#results .round-strip{font-size:14px;line-height:1.4}
+ #resultExtra{font-size:16px;line-height:1.5}
+ #results .results-sheet>.row{flex-direction:column;align-items:stretch}
+ #garage .garage-layout{display:flex;flex-direction:column;gap:16px}
+ #garage .garage-display{height:auto}
+ #garage .garage-display #garageCanvas{width:100%;height:auto}
+ #garage .garage-callout{position:static;margin:12px 0}
+ #garage .garage-callout strong{font-size:22px;letter-spacing:3px}
+ #garage .garage-callout span{font-size:14px;line-height:1.4}
+ #garage .garage-display>.row{margin:14px 0}
+ #garage .garage-controls label{flex-direction:column;align-items:stretch;gap:8px}
+ #garage .garage-controls input{width:100%}
+ #garage .choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #garage .choice-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #garage .paint-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #garage .choice-grid button,#garage .paint-grid button{font-size:14px;padding:8px 4px}
+ #garage .garage-label{font-size:14px;margin:16px 0 8px}
+ #online .online-layout,#online.public-search .online-layout{display:flex;flex-direction:column;height:auto;min-height:0;gap:16px}
+ #online.public-search .lobby-settings{display:none}
+ #online .lobby-main{padding:16px 12px}
+ #online .lobby-main h3{font-size:22px;line-height:1.25}
+ #online .lobby-actions,#online .join-row{flex-wrap:wrap;gap:12px}
+ #online .join-row input{width:100%;flex:1 1 100%}
+ #online .join-row button{width:100%}
+ #online .lobby-settings label{display:flex;flex-direction:column;align-items:stretch;gap:8px}
+ #online .lobby-settings select{width:100%}
+ #online .checkwrap label{flex-direction:row;align-items:center}
+ #online .lobby-footnote,#online .connection-bottom{font-size:14px;line-height:1.4}
+ #online .connection-bottom{display:flex;flex-wrap:wrap;gap:10px}
+ #online #roomBadge{max-width:100%;flex-wrap:wrap}
+ #online #roomCodeLabel{font-size:28px;overflow-wrap:anywhere}
+ #online .peer-row{flex-wrap:wrap;gap:10px}
+ #brawl .brawl-head{flex-wrap:wrap;gap:12px}
+ #brawl .brawl-seats{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+ #brawl .brawl-seat{min-height:0;padding:10px 6px}
+ #brawl .brawl-seat canvas{width:100%;height:auto}
+ #brawl .brawl-seat b{font-size:16px;line-height:1.3}
+ #brawl .brawl-seat small{font-size:14px}
+ #brawl .brawl-actions{grid-template-columns:1fr;gap:12px}
+ #brawl .brawl-bottom{flex-wrap:wrap;gap:12px;margin-top:16px}
+ #brawl .brawl-bottom input{width:100%;flex:1 1 100%}
+ #brawl #partyJoin,#brawl #partyCopy,#brawl #partyStart{width:100%}
+ #partyStatus{font-size:16px;line-height:1.5}
+ #lost .row{flex-direction:column;align-items:stretch}
+ #credits .credit-columns{display:grid;grid-template-columns:1fr;gap:16px}
+ #credits .credit-columns section+section{border-left:0;padding-left:0;border-top:1px solid #3d4d2c;padding-top:16px}
+ #credits h3{font-size:20px;line-height:1.3}
+ body:has(#stage>.overlay:not([hidden])) #portraitHint{display:none}
+ body:has(#stage>.overlay:not([hidden])) #trontAbout.tront-about{top:max(10px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right))}
+}
+
 </style>
 </head>
 <body>
@@ -795,7 +917,7 @@ function attractStep(dt){G.attract+=dt;for(let i=events.length-1;i>=0;i--)if(eve
 
 // -- DOM instruments stay crisp; only values that change are rewritten --
 const overlays=['title','setup','shop','arsenal','pause','help','results'];
-function overlay(id){G.overlay=id||null;for(const k of overlays)$(k).hidden=k!==id;if(id==='title')$('title').scrollTop=0;if(id)keys.clear();updateHud(true);}
+function overlay(id){const previous=G.overlay;G.overlay=id||null;for(const k of overlays)$(k).hidden=k!==id;if(id&&(id==='title'||previous!==id))$(id).scrollTop=0;if(id)keys.clear();updateHud(true);}
 function showTitle(){G.scene='title';G.mode='cpu';resetEffects();initPlayers('Player 1');generateTerrain(987642,false);placeTanks();G.titleTerrainTime=G.time;G.attract=1.3;$('hud').hidden=true;$('rangebar').hidden=true;$('toast').hidden=true;overlay('title');updateSettingsButtons();}
 function setup(mode='cpu'){$('modeInput').value=mode;$('difficultyInput').value=settings.difficulty;$('poolInput').value=settings.pool;$('biomeInput').value=settings.biome;$('nameInput').value=settings.name||'Player 1';$('seedInput').value='';overlay('setup');}
 function configure(fromSetup=true,mode='cpu'){if(fromSetup){settings.difficulty=$('difficultyInput').value;settings.pool=$('poolInput').value;settings.biome=$('biomeInput').value;settings.name=$('nameInput').value.trim()||'Player 1';mode=$('modeInput').value;}G.mode=mode;const raw=fromSetup?$('seedInput').value.trim():'';G.seedLabel=raw||String((Date.now()^Math.floor(Math.random()*1e9))>>>0);G.seed=/^-?\d+$/.test(G.seedLabel)?(Number(G.seedLabel)>>>0):seedHash(G.seedLabel);saveSettings();seedRng(G.seed);initPlayers(settings.name||'Player 1');G.startInventory=null;history=[];resetEffects();}
@@ -886,7 +1008,7 @@ for(const [pack]of PACKS){const o=document.createElement('option');o.value=pack;
 // TINY TREADS 3.1 — UI polish, tank art pass, stronger attract mode, and weapon upgrades.
 // The artillery/material engine above remains independent of online transport.
 // ============================================================================
-const TT_VERSION='4.0.3';
+const TT_VERSION='4.0.4';
 const LAYOUTS={hills:'Rolling hills',ridge:'The great divide',bowl:'The punch bowl',terraces:'Stepping stones',arches:'Arch enemies',plain:"No man's lawn"};
 const RULES={classic:'Classic artillery',mirror:'Mirror arsenal',mystery:'Mystery magazine',trick:'Trick-shot pool'};
 const HULLS={scout:'Scout',boxer:'Boxer',dart:'Dart',bulldog:'Bulldog'},TURRETS={standard:'Cannon',twin:'Twin',stub:'Stubby'},FLAGS={none:'Clean',flag:'Pennant',aerial:'Aerial',bolt:'Lightning'};
@@ -953,7 +1075,7 @@ function startDeal(plan=null,replicated=false){if(G.scene!=='shop'||DEAL.active)
 autoDraft=function(){if(DEAL.active){if(Net.active){Net.command('skip',{});return;}completeDeal();}else startDeal();};
 function completeDeal(){if(!DEAL.active)return;for(let i=DEAL.index;i<DEAL.plan.length;i++)commitPick(DEAL.plan[i],false);cleanupDeal();beginBattle();}
 function commitPick(index,animate=true){const o=G.offers[index];if(!o||o.owner>=0)return;const pi=shopPlayer(),slot=players[pi].inventory.length,el=$('offer').children[index],r=el?.getBoundingClientRect();o.owner=pi;players[pi].inventory.push({w:o.w,used:false});G.shopTurn++;updateShop();if(animate){tone(160+(pi?55:0),80,.08,'triangle',.07);tone(650+(G.shopTurn%3)*110,440,.026,'square',.018);const target=$('draftSlots'+pi).children[slot];target?.classList.add('just-dealt');if(r&&target)flyWeapon(o.w,r,target.getBoundingClientRect(),pi);}G.aiTimer=.65;}
-function flyWeapon(w,from,to,pi){const stage=$('stage'),r=stage.getBoundingClientRect(),scale=r.width/W,f=document.createElement('div');f.className='flying-weapon';f.style.left=(from.left-r.left)/scale+'px';f.style.top=(from.top-r.top)/scale+'px';f.style.width=Math.min(211,from.width/scale)+'px';f.style.borderColor=COLORS[players[pi].color];f.innerHTML=`<img alt="" src="${icon(w)}"><span>${settings.rule==='mystery'?'Sealed weapon':esc(w.name)}</span>`;stage.append(f);requestAnimationFrame(()=>{f.style.transform=`translate(${(to.left-from.left)/scale}px,${(to.top-from.top)/scale}px) scale(.88)`;f.style.opacity='.12';});flyTimers.push(setTimeout(()=>f.remove(),300));}
+function flyWeapon(w,from,to,pi){const stage=$('stage'),r=stage.getBoundingClientRect(),scale=r.width/stage.offsetWidth,f=document.createElement('div');f.className='flying-weapon';f.style.left=(from.left-r.left)/scale+'px';f.style.top=(from.top-r.top)/scale+'px';f.style.width=Math.min(211,from.width/scale)+'px';f.style.borderColor=COLORS[players[pi].color];f.innerHTML=`<img alt="" src="${icon(w)}"><span>${settings.rule==='mystery'?'Sealed weapon':esc(w.name)}</span>`;stage.append(f);requestAnimationFrame(()=>{f.style.transform=`translate(${(to.left-from.left)/scale}px,${(to.top-from.top)/scale}px) scale(.88)`;f.style.opacity='.12';});flyTimers.push(setTimeout(()=>f.remove(),300));}
 function stepDeal(dt){DEAL.at+=dt;DEAL.tick+=dt;const remaining=DEAL.plan.length-DEAL.index;if(DEAL.phase==='reveal'){if(DEAL.at>.62){cleanupDeal();beginBattle();}return;}const duration=DEAL.index<2?.34:remaining<3?.24:.105;if(DEAL.tick>.034){DEAL.tick=0;const available=G.offers.map((o,i)=>o.owner<0?i:-1).filter(i=>i>=0);const i=available.length?available[Math.floor(Math.random()*available.length)]:-1;for(const e of $('offer').children)e.classList.remove('shuffle-lit');if(i>=0)$('offer').children[i]?.classList.add('shuffle-lit');tone(370+Math.random()*210,330,.018,'triangle',.012);}
  if(DEAL.at>=duration){DEAL.at=0;const i=DEAL.plan[DEAL.index++];if(Number.isInteger(i))commitPick(i,true);if(DEAL.index>=DEAL.plan.length){DEAL.phase='reveal';$('shopTurnLabel').textContent='Locked, loaded, deeply irresponsible.';$('shopCount').textContent='Arsenals ready';$('shopAuto').textContent='Start battle';}else selectedShopWeapon=G.offers[DEAL.plan[DEAL.index]]?.w.id||0;}}
 pickShop=function(index,automatic=false){if(G.scene!=='shop'||DEAL.active)return;const pi=shopPlayer();if(!automatic&&G.mode==='cpu'&&pi===1)return;if(Net.active&&!Net.applying){Net.command('pick',{index});return;}if(!G.offers[index]||G.offers[index].owner>=0)return;commitPick(index);if(G.shopTurn>=20)beginBattle();};
@@ -1627,7 +1749,7 @@ attractStep=function(dt){for(let i=events.length-1;i>=0;i--)if(events[i].at<=G.t
  launch(w,owner);$('attractCaption').querySelector('span').textContent=`Live artillery · ${name}`;
 };
 // The actual live preview frames use a slightly closer crop, with no extra process loop.
-demoTick=function(dt){const visible=!window.TINY_DEMO&&!DEAL.active&&((G.overlay==='shop'&&settings.rule!=='mystery')||(G.overlay==='arsenal'&&!arsenalEmpty));$('demoDock').hidden=!visible;if(!visible)return;ensureDemo();const dock=$('demoDock');if(G.overlay==='shop'){if(dock.parentNode!==$('stage'))$('stage').append(dock);dock.style.left='57px';dock.style.top='621px';dock.style.width='270px';dock.style.height='96px';}else{const panel=document.querySelector('.weapon-detail');if(dock.parentNode!==panel)panel.insertBefore(dock,$('equipWeapon'));}
+demoTick=function(dt){const visible=!window.TINY_DEMO&&!DEAL.active&&((G.overlay==='shop'&&settings.rule!=='mystery')||(G.overlay==='arsenal'&&!arsenalEmpty));$('demoDock').hidden=!visible;if(!visible)return;ensureDemo();const dock=$('demoDock');if(G.overlay==='shop'){const host=matchMedia('(max-width:600px) and (orientation:portrait)').matches?document.querySelector('.shop-footer'):$('stage');if(dock.parentNode!==host)host.prepend(dock);dock.style.left='57px';dock.style.top='621px';dock.style.width='270px';dock.style.height='96px';}else{const panel=document.querySelector('.weapon-detail');if(dock.parentNode!==panel)panel.insertBefore(dock,$('equipWeapon'));}
  if(!demoReady)return;const api=demoFrame.contentWindow.POCKET;if(demoWanted<0)demoWanted=0;if(demoShown!==demoWanted){demoShown=demoWanted;demoAge=0;api.demo(demoWanted);$('demoName').textContent=WEAPONS[demoWanted]?.name||'';}
  demoAccum+=dt;if(demoAccum<1/30)return;const delta=Math.min(.09,demoAccum);demoAccum=0;demoAge+=delta;if(demoAge>.6&&!api.state.locked&&api.state.players[0].shots===0)api.fire();api.advance(delta,true);
  if(demoAge>11||(demoAge>3&&!api.state.locked)){api.demo(demoWanted);demoAge=0;}const c=$('weaponDemo').getContext('2d');c.clearRect(0,0,600,240);c.drawImage(demoFrame.contentWindow.document.getElementById('field'),150,95,1000,500,0,0,600,240);};

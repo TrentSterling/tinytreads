@@ -1,10 +1,12 @@
 # CLAUDE.md, Tiny Treads
 
-Current release candidate: 4.0.3. `versions/tiny-treads-v7.html` adds a responsive
-portrait title while preserving the fixed battle stage and desktop/tablet layout.
-The v6 source is unchanged. `node tools/portrait-title-audit.mjs` checks title
-geometry and flows across ten viewports. Tests remain headless and muted; no
-physical input, focus, audio or native gesture qualification is claimed.
+Current release candidate: 4.0.4. `versions/tiny-treads-v8.html` extends the phone
+portrait layout to the existing menus and results while preserving the fixed
+battle stage and desktop/tablet layout. The v7 source is unchanged.
+`node tools/phone-menus-audit.mjs` checks 16 menu states and existing flows across
+seven viewports; `node tools/portrait-title-audit.mjs` retains the ten title cases.
+Tests remain headless and muted; no physical input, focus, audio or native gesture
+qualification is claimed. See `qa/phone-menus/README.md` for fixture limitations.
 
 Single-file turn-based artillery game (Pocket Tanks / Scorched Earth lineage): destructible terrain, 400 weapons, garage, quick battle against the CPU, local and online play. Live at https://tront.xyz/tinytreads/ (GitHub Pages, `main` root). ChatGPT writes the drops; this repo hosts them.
 
