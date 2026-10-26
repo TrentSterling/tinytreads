@@ -46,6 +46,7 @@ export async function launch({port = 0, width = 1280, height = 800, headless = t
   const page = {
     logs, proc, dir,
     init: source => call('Page.addScriptToEvaluateOnNewDocument', {source}),
+    viewport: (width,height) => call('Emulation.setDeviceMetricsOverride', {width,height,deviceScaleFactor:1,mobile:false}),
     goto: url => call('Page.navigate', {url}),
     eval: async (expr) => { const r = await call('Runtime.evaluate', {expression: expr, returnByValue: true, awaitPromise: true}); if (r.exceptionDetails) throw new Error('eval: ' + (r.exceptionDetails.exception?.description || r.exceptionDetails.text)); return r.result.value; },
     shot: async (file) => { const {data} = await call('Page.captureScreenshot', {format: 'png'}); const fs = await import('node:fs'); fs.writeFileSync(file, Buffer.from(data, 'base64')); return file; },
