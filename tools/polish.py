@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'versions' / 'tiny-treads-v5.html'
+SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'versions' / 'tiny-treads-v6.html'
 DST = ROOT / 'index.html'
 html = SRC.read_text(encoding='utf-8')
 orig = html

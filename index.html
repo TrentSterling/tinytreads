@@ -858,7 +858,7 @@ for(const [pack]of PACKS){const o=document.createElement('option');o.value=pack;
 // TINY TREADS 3.1 — UI polish, tank art pass, stronger attract mode, and weapon upgrades.
 // The artillery/material engine above remains independent of online transport.
 // ============================================================================
-const TT_VERSION='4.0.1';
+const TT_VERSION='4.0.2';
 const LAYOUTS={hills:'Rolling hills',ridge:'The great divide',bowl:'The punch bowl',terraces:'Stepping stones',arches:'Arch enemies',plain:"No man's lawn"};
 const RULES={classic:'Classic artillery',mirror:'Mirror arsenal',mystery:'Mystery magazine',trick:'Trick-shot pool'};
 const HULLS={scout:'Scout',boxer:'Boxer',dart:'Dart',bulldog:'Bulldog'},TURRETS={standard:'Cannon',twin:'Twin',stub:'Stubby'},FLAGS={none:'Clean',flag:'Pennant',aerial:'Aerial',bolt:'Lightning'};
@@ -867,9 +867,10 @@ const defaultLook=(i=0)=>({body:i?'boxer':'scout',turret:'standard',flag:'none',
 function cleanLook(v,i=0){const d=defaultLook(i);return{body:HULLS[v?.body]?v.body:d.body,turret:TURRETS[v?.turret]?v.turret:d.turret,flag:FLAGS[v?.flag]?v.flag:d.flag,color:Number.isInteger(v?.color)&&v.color>=0&&v.color<COLORS.length?v.color:d.color};}
 Object.assign(settings,{layout:'hills',series:1,rule:'classic',wind:false,lowGravity:false,keepCraters:false,draft:'auto',look:defaultLook(),look2:defaultLook(1),name2:'Player 2',...(()=>{try{return JSON.parse(localStorage.getItem('tiny-treads-settings')||'{}')}catch{return{}}})()});
 settings.look=cleanLook(settings.look);settings.look2=cleanLook(settings.look2,1);
-settings.layout=LAYOUTS[settings.layout]?settings.layout:'hills';settings.rule=RULES[settings.rule]?settings.rule:'classic';settings.series=[1,3,5].includes(+settings.series)?+settings.series:1;
+// Reuse the supported rule defaults for returning players with stale saved choices.
+Object.assign(settings,cleanRules(settings));
 const gamePreferences=()=>({difficulty:settings.difficulty,pool:settings.pool,biome:settings.biome,layout:settings.layout,series:+settings.series,rule:settings.rule,wind:!!settings.wind,lowGravity:!!settings.lowGravity,keepCraters:!!settings.keepCraters,draft:settings.draft});
-function cleanRules(v={}){return{difficulty:['easy','normal','hard'].includes(v.difficulty)?v.difficulty:'normal',pool:['original','classic','all'].includes(v.pool)?v.pool:'classic',biome:THEMES[v.biome]?v.biome:'green',layout:LAYOUTS[v.layout]?v.layout:'hills',series:[1,3,5].includes(+v.series)?+v.series:1,rule:RULES[v.rule]?v.rule:'classic',wind:!!v.wind,lowGravity:!!v.lowGravity,keepCraters:!!v.keepCraters,draft:v.draft==='manual'?'manual':'auto'};}
+function cleanRules(v={}){return{difficulty:['easy','normal','hard'].includes(v.difficulty)?v.difficulty:'normal',pool:['original','classic','all'].includes(v.pool)?v.pool:'classic',biome:Object.hasOwn(THEMES,v.biome)?v.biome:'green',layout:Object.hasOwn(LAYOUTS,v.layout)?v.layout:'hills',series:[1,3,5].includes(+v.series)?+v.series:1,rule:Object.hasOwn(RULES,v.rule)?v.rule:'classic',wind:!!v.wind,lowGravity:!!v.lowGravity,keepCraters:!!v.keepCraters,draft:v.draft==='manual'?'manual':'auto'};}
 saveSettings=function(){try{localStorage.setItem('tiny-treads-settings',JSON.stringify(settings))}catch{}};
 let seriesState={length:1,round:1,firstOffset:0,wins:[0,0],totals:[0,0],best:[0,0],worst:[0,0],lastWinner:-1,recorded:false,champion:-1};
 function resetSeries(){seriesState={length:+settings.series||1,round:1,firstOffset:0,wins:[0,0],totals:[0,0],best:[0,0],worst:[0,0],lastWinner:-1,recorded:false,champion:-1};G.preserveTerrain=false;}
